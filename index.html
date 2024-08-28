@@ -8,54 +8,72 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <header id="header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a href="#"><img class="header-logo" src="./assets/logo-empresa.png" alt="Logo da empresa DoisDev"></a>
-                <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between mt-3 mt-lg-0" id="navbarNavAltMarkup">
-                    <div></div>
-                    <div class="navbar-nav">
-                        <a class="nav-link header-link" href="#historia">Nosso Propósito</a>
-                        <a class="nav-link header-link" href="#servicos">Serviços</a>
-                        <a class="nav-link header-link" href="#contato">Contato</a>
-                    </div>
-                </div>
-            </div>
+    <header class="header">
+        <nav class="header-nav">
+            <a href="#"><img class="header-logo" src="./assets/logo-azul.svg"
+                    alt="Logo da empresa, com o nome DoisDev"></a>
+            <button class="header-hamburguer navbar-toggler">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times" style="display:none;"></i>
+            </button>
+            <ul class="header-ul">
+                <li><a class="header-link" href="#historia">Nosso propósito</a></li>
+                <li><a class="header-link" href="#servicos">Serviços</a></li>
+                <li><a class="header-link" href="#contato">Contato</a></li>
+                <li>
+                    <select name="Seletor de linguagem do site" id="select-idioma">
+                        <option value="Seleciona idioma" disabled selected>Selecione um idioma</option>
+                        <option value="Português" onclick="changeLanguage('pt-br')">Português</option>
+                        <option value="Inglês" onclick="changeLanguage('en')">Inglês</option>
+                    </select>
+                </li>
+            </ul>
         </nav>
     </header>
     <main>
+        <section class="principal">
+            <div class="principal-container-titulo">
+                <img src="./assets/logo-azul.svg" alt="principal-logo">
+                <p class="principal-paragrafo">Impulsione sua <strong
+                        class="principal-paragrafo-destaque">credibilidade</strong> e alcance com sites projetados para
+                    transformar visitantes em clientes
+                    fiéis.</p>
+            </div>
+            <h2 class="principal-sabermais">QUER SABER MAIS... <button class="border-0 bg-transparent"><a href="#historia"><i
+                class="bi bi-arrow-down-circle-fill"></i></a></button></h2>
+        </section>
         <section id="historia">
             <div class="historia-container container">
-                <div>
-                    <i class="bi bi-body-text historia-icon"></i>
-                    <h1 class="historia-titulo">NOSSO PROPÓSITO</h1>
-                    <i class="bi bi-body-text historia-icon"></i>
-                </div>
                 <div class="historia-container-texto">
-                    <p class="fs-5">A DoisDev nasceu com o propósito de ajudar empresas e prestadores de serviço a
-                        aproveitarem a tecnologia a seu favor. Nosso foco é produzir sites que alavanquem e proporcionem
-                        mais propriedade ao seu negócio. Um site bem feito gera mais credibilidade, atrai mais clientes
-                        e facilita a vida tanto do cliente quanto do prestador de serviço ou empresa. No cenário atual,
-                        a tecnologia domina grande parte de nossas vidas, e, com isso em mente, temos a capacidade de
-                        tirar o seu negócio do passado e atualizar para o mundo em que vivemos.
-                    </p>
+                    <h1 class="historia-titulo">NOSSO PROPÓSITO</h1>
+                    <div class="historia-topicos">
+                        <div class="historia-topicos-card"></div>
+                        <div class="historia-topicos-card"></div>
+                        <div class="historia-topicos-card"></div>
+                        <div class="historia-topicos-card"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="fundo-img-historia">
+                        <img class="img-historia" src="./assets/imagem-infinito-propositos.svg"
+                            alt="imagem com dipositivos">
+                    </div>
                 </div>
             </div>
-            <div class="historia-container-escolha">
-                <h3 class="historia-container-titulo">O que nos torna a <strong
-                        class="historia-container-titulo-strong">escolha certa</strong> para o seu negócio <i
-                        class="bi bi-arrow-down historia-container-titulo-strong fs-4"></i></h3>
-                <div class="historia-cards row mx-0 g-2">
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+
+            <div class="historia-container-escolha" id="escolha">
+                <h4 class="historia-container-titulo">O QUE NOS TORNA A <strong
+                        class="historia-container-titulo-strong">ESCOLHA CERTA</strong> PARA O SEU NEGÓCIO <button class="border-0 bg-transparent"><a href="#escolha-container"><i
+                            class="bi bi-arrow-down-circle-fill"></i></a></button></h4>
+                <div class="historia-cards row mx-0 g-2" id="escolha-container">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3" data-aos="fade-right" data-aos-offset="200"
+                        data-aos-easing="ease-in-sine" data-aos-duration="700">
                         <div class="historia-card-item">
                             <div class="d-flex gap-2">
                                 <i class="bi bi-cash-coin historia-card-icon"></i>
@@ -68,7 +86,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3" data-aos="fade-right" data-aos-offset="200"
+                        data-aos-easing="ease-in-sine" data-aos-duration="700">
                         <div class="historia-card-item">
                             <div class="d-flex gap-2">
                                 <i class="bi bi-activity historia-card-icon"></i>
@@ -80,7 +99,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3" data-aos="fade-right" data-aos-offset="200"
+                        data-aos-easing="ease-in-sine" data-aos-duration="700">
                         <div class="historia-card-item">
                             <div class="d-flex gap-2">
                                 <i class="bi bi-vector-pen historia-card-icon"></i>
@@ -93,7 +113,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3" data-aos="fade-right" data-aos-offset="200"
+                        data-aos-easing="ease-in-sine" data-aos-duration="700">
                         <div class="historia-card-item">
                             <div class="d-flex gap-2">
                                 <i class="bi bi-alarm historia-card-icon"></i>
@@ -107,75 +128,151 @@
                         </div>
                     </div>
                     <div class="historia-card-sabermais">
-                        <div class="historia-botao-sabermais">
-                            <a class="historia-botao-sabermais-texto" href="#contato">QUER SABER MAIS? <i class="bi bi-arrow-right-circle-fill"></i></a>
+                        <a class="historia-botao-sabermais" href="#contato">
+                            <button class="historia-botao-sabermais-texto">ENTRE EM CONTATO <i
+                                    class="bi bi-arrow-right-circle-fill"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos">
+            <div class="servico-container container">
+                <h2 class="servicos-titulo">Nossos serviços</h2>
+                <div class="servicos-container">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                                    onclick="trocarImagem('./assets/criacao-img.svg')">
+                                    <p class="accordion-titulo">Criação de sites rápidos e eficazes</p>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                                    onclick="trocarImagem('./assets/manutencao-img.svg')">
+                                    <p class="accordion-titulo">Manutenção do seu site</p>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                                    onclick="trocarImagem('./assets/suporte-img.svg')">
+                                    <p class="accordion-titulo">Suporte capacitado ao seu site</p>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <img src="./assets/criacao-img.svg" alt="card de serviços da DoisDev: Criação, Manutenção e Suporte"
+                        class="img-accordion">
                 </div>
             </div>
         </section>
 
-        <section id="servicos" class="container">
-            <h1>Nossos serviços</h1>
-            <div class="d-flex align-center">
-                <div class="servicos-sections">
-                    <img src="" alt="">
-                    <p>
-
-                    </p>
-                </div>
-
-                <div class="servicos-sections">
-                    <img src="" alt="">
-                    <p>
-
-                    </p>
-                </div>
-
-                <div class="servicos-sections">
-                    <img src="" alt="">
-                    <p>
-
-                    </p>
-                </div>
-            </div>
-        </section>
         <section id="contato" class="container">
-            <h1>Contato</h1>
-            <div class="d-flex flex-column gap-2">
-                <a href="" class="topico-contato">
-                    <div class="barrinha"></div>
-                    <i class="bi bi-envelope"></i>
-                    <p class="m-0 p-1">email@email.com</p>
-                </a>
-                <div class="topico-contato-whatsapp">
-                    <div class="d-flex flex-column gap-2">
-                        <a href="" class="d-flex topico-contato-whatsapp-p">
-                            <div class="barrinha"></div>
+            <h2 class="text-center pt-5 contato-titulo">Contato</h2>
+            <div class="contato-opcoes">
+                <div class="contatos-container">
+                    <a href="" class="topico-contato">
+                        <div class="icon-contato">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <p class="m-0 p-1">email@email.com</p>
+                    </a>
+                    <a href="" class="topico-contato">
+                        <div class="icon-contato">
                             <i class="bi bi-whatsapp"></i>
-                            <p class="m-0 p-1">+55 75 99150-4950</p>
-                        </a>
-                        <a href="" class="d-flex topico-contato-whatsapp-p">
-                            <div class="barrinha"></div>
+                        </div>
+                        <p class="m-0 p-1">+55 75 99150-4950</p>
+                    </a>
+                    <a href="" class="topico-contato">
+                        <div class="icon-contato">
                             <i class="bi bi-whatsapp"></i>
-                            <p class="m-0 p-1">+55 75 99143-6121</p>
-                        </a>
-                    </div>
+                        </div>
+                        <p class="m-0 p-1">+55 75 99143-6121</p>
+                    </a>
+                    <a href="" class="topico-contato">
+                        <div class="icon-contato">
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                        <p class="m-0 p-1">instagram</p>
+                    </a>
                 </div>
-                <a href="" class="topico-contato">
-                    <div class="barrinha"></div>
-                    <i class="bi bi-instagram"></i>
-                    <p class="m-0 p-1">instagram</p>
-                </a>
+
+                <div class="contatos-form">
+                    <form action="submit" class="form-contato">
+                        <h2 class="text-center">Formulário de contato</h2>
+                        <div class="form-inputs">
+                            <label for="">
+                                <input class="input-item" type="text" placeholder="Insira seu nome">
+                            </label>
+
+                            <label for="">
+                                <input class="input-item" type="text" placeholder="Descreva o motivo do contato">
+                            </label>
+
+                            <label for="">
+                                <input class="input-item" type="text" placeholder="Como quer nos contatar">
+                            </label>
+
+                            <button type="submit" class="botao-form">
+                                Enviar Formulário
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <p><i class="bi bi-c-circle"></i> 2024 Nome da empresa. Todos os direitos reservados.</p>
+        <p><i class="bi bi-c-circle"></i> 2024 DoisDev. Todos os direitos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/language.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
 
 </html>
