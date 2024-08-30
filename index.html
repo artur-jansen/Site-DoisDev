@@ -26,12 +26,9 @@
                 <li><a class="header-link" href="#historia">Nosso propósito</a></li>
                 <li><a class="header-link" href="#servicos">Serviços</a></li>
                 <li><a class="header-link" href="#contato">Contato</a></li>
-                <li>
-                    <select name="Seletor de linguagem do site" id="select-idioma">
-                        <option value="Seleciona idioma" disabled selected>Selecione um idioma</option>
-                        <option value="Português" onclick="changeLanguage('pt-br')">Português</option>
-                        <option value="Inglês" onclick="changeLanguage('en')">Inglês</option>
-                    </select>
+                <li class="header-link-icons">
+                    <img class="header-link-icon" onclick="changeLanguage('pt-br')" src="./assets/brasil-icon.png" alt="icone da bandeira do Brasil em forma de circulo para traduzir para português">
+                    <img class="header-link-icon" onclick="changeLanguage('en')" src="./assets/usa-icon.png" alt="icone da bandeira dos Estados Unidos em forma de circulo para traduzir para inglês">
                 </li>
             </ul>
         </nav>
@@ -39,14 +36,14 @@
     <main>
         <section class="principal">
             <div class="principal-container-titulo">
-                <img src="./assets/logo-azul.svg" alt="principal-logo">
+                <img src="./assets/logo-azul.svg" alt="Logo da empresa, com o nome Dois Dev" class="principal-logo">
                 <p class="principal-paragrafo">Impulsione sua <strong
                         class="principal-paragrafo-destaque">credibilidade</strong> e alcance com sites projetados para
                     transformar visitantes em clientes
                     fiéis.</p>
             </div>
-            <h2 class="principal-sabermais">QUER SABER MAIS... <button class="border-0 bg-transparent"><a href="#historia"><i
-                class="bi bi-arrow-down-circle-fill"></i></a></button></h2>
+            <h2 class="principal-sabermais">QUER SABER MAIS... <button class="border-0 bg-transparent"><a
+                        href="#historia"><i class="bi bi-arrow-down-circle-fill"></i></a></button></h2>
         </section>
         <section id="historia">
             <div class="historia-container container">
@@ -69,8 +66,9 @@
 
             <div class="historia-container-escolha" id="escolha">
                 <h4 class="historia-container-titulo">O QUE NOS TORNA A <strong
-                        class="historia-container-titulo-strong">ESCOLHA CERTA</strong> PARA O SEU NEGÓCIO <button class="border-0 bg-transparent"><a href="#escolha-container"><i
-                            class="bi bi-arrow-down-circle-fill"></i></a></button></h4>
+                        class="historia-container-titulo-strong">ESCOLHA CERTA</strong> PARA O SEU NEGÓCIO <button
+                        class="border-0 bg-transparent"><a href="#escolha-container"><i
+                                class="bi bi-arrow-down-circle-fill"></i></a></button></h4>
                 <div class="historia-cards row mx-0 g-2" id="escolha-container">
                     <div class="col-12 col-md-6 col-lg-4 col-xl-3" data-aos="fade-right" data-aos-offset="200"
                         data-aos-easing="ease-in-sine" data-aos-duration="700">
@@ -82,7 +80,7 @@
                             <p class="historia-card-paragrafo">
                                 Com as DoisDev seu negócio se torna cada vez mais rentável e atraindo ainda mais
                                 clientes,
-                                para que a empresa/negócio cresça ainda mais
+                                para que sua empresa/negócio cresça ainda mais.
                             </p>
                         </div>
                     </div>
@@ -95,7 +93,7 @@
                             </div>
                             <p class="historia-card-paragrafo">
                                 A DoisDev tem a prioridade e capacidade de entregar resultados que realmente fazem a
-                                diferença para o seu negócio, transformando simples visitantes em potenciais clientes
+                                diferença para o seu negócio, transformando simples visitantes em potenciais clientes.
                             </p>
                         </div>
                     </div>
@@ -109,7 +107,7 @@
                             <p class="historia-card-paragrafo">
                                 Com os nossos serviços temos a oportunidade de gerar mais propriedade e autenticidade a
                                 sua
-                                marca, elevando a sua empresa ao patamar que ela merece
+                                marca, elevando a sua empresa ao patamar que ela merece.
                             </p>
                         </div>
                     </div>
@@ -123,20 +121,21 @@
                             <p class="historia-card-paragrafo">
                                 A DoisDev impussiona o seu produto e otimiza o seu tempo,
                                 simplificando a suas tarefas e contato com os clientes, para você focar no que importa e
-                                otimizar o seu tempo
+                                otimizar o seu tempo.
                             </p>
                         </div>
                     </div>
-                    <div class="historia-card-sabermais">
-                        <a class="historia-botao-sabermais" href="#contato">
-                            <button class="historia-botao-sabermais-texto">ENTRE EM CONTATO <i
-                                    class="bi bi-arrow-right-circle-fill"></i></button>
-                        </a>
+                    <div class="historia-card-contato">
+                        <button class="historia-card-botao-contato">
+                            <a href="#contato" class="historia-card-botao-contato-link">
+                                <span>ENTRE EM CONTATO</span>
+                                <i class="bi bi-chat-dots icon-card-contato"></i>
+                            </a>
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
-
         <section id="servicos">
             <div class="servico-container container">
                 <h2 class="servicos-titulo">Nossos serviços</h2>
@@ -212,12 +211,16 @@
         <section id="contato" class="container">
             <h2 class="text-center pt-5 contato-titulo">Contato</h2>
             <div class="contato-opcoes">
-                <div class="contatos-container">
+                <div class="contato-frase">
+                    <h5 class="contato-frase-titulo"><i class="bi bi-geo-alt"></i> Onde nos encontrar...</h5>
+                    <p class="contato-frase-paragrafo">Estamos localizados exatamente aqui, no seu dipositivo, fácil e simples de nos achar... <i class="bi bi-emoji-wink"></i></p>
+                </div>
+                <div class="contato-container">
                     <a href="" class="topico-contato">
                         <div class="icon-contato">
                             <i class="bi bi-envelope"></i>
                         </div>
-                        <p class="m-0 p-1">email@email.com</p>
+                        <p class="m-0 p-1">doisdev@gmail.com</p>
                     </a>
                     <a href="" class="topico-contato">
                         <div class="icon-contato">
@@ -235,31 +238,8 @@
                         <div class="icon-contato">
                             <i class="bi bi-instagram"></i>
                         </div>
-                        <p class="m-0 p-1">instagram</p>
+                        <p class="m-0 p-1">@doisdev</p>
                     </a>
-                </div>
-
-                <div class="contatos-form">
-                    <form action="submit" class="form-contato">
-                        <h2 class="text-center">Formulário de contato</h2>
-                        <div class="form-inputs">
-                            <label for="">
-                                <input class="input-item" type="text" placeholder="Insira seu nome">
-                            </label>
-
-                            <label for="">
-                                <input class="input-item" type="text" placeholder="Descreva o motivo do contato">
-                            </label>
-
-                            <label for="">
-                                <input class="input-item" type="text" placeholder="Como quer nos contatar">
-                            </label>
-
-                            <button type="submit" class="botao-form">
-                                Enviar Formulário
-                            </button>
-                        </div>
-                    </form>
                 </div>
             </div>
         </section>
