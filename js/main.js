@@ -50,3 +50,158 @@ document.addEventListener('DOMContentLoaded', () => {
         burger.classList.toggle('active');
     });
 });
+
+const card1 = document.querySelector('.historia-card-1');
+const card2 = document.querySelector('.historia-card-2');
+const card3 = document.querySelector('.historia-card-3');
+const botaoEscolha1 = document.querySelector('.btn1');
+const botaoEscolha2 = document.querySelector('.btn2');
+const botaoEscolha3 = document.querySelector('.btn3');
+
+function clickPerformance() {
+    card1.innerHTML = `
+        <div class="historia-card-item">
+        <div class="historia-card-header">
+            <i class="bi bi-coin"></i>
+            <h5 class="historia-card-titulo">VELOCIDADE E PERFORMANCE</h5>
+        </div>
+        <p class="historia-card-paragrafo">
+            Com a nossa equipe, otimizamos o código e deixamos seu site liso igual sabonete, acessível em
+            qualquer dispositivo.
+        </p>
+    </div>
+    `;
+
+    card2.innerHTML = `
+        <div class="historia-card-item">
+            <div class="historia-card-header">
+                <i class="bi bi-coin"></i>
+                <h5 class="historia-card-titulo">FOCO NOS RESULTADOS</h5>
+            </div>
+            <p class="historia-card-paragrafo">
+                A DoisDev tem a prioridade e capacidade de entregar resultados que realmente fazem a
+                diferença para o seu negócio, transformando simples visitantes em potenciais clientes.
+            </p>
+        </div>
+    `;
+
+    card3.innerHTML = `
+    <div class="historia-card-item">
+        <div class="historia-card-header">
+            <i class="bi bi-coin"></i>
+            <h5 class="historia-card-titulo">SEM ESTRESSE</h5>
+        </div>
+        <p class="historia-card-paragrafo">
+            Com as nossas capacidades, criamos e modificamos seu site para que o cliente não se estresse com algum erro ou travamento na hora de usar, garantindo qualidade e 5 estrelas de contentamento do cliente.
+        </p>
+    </div>
+    `;
+
+    botaoEscolha1.style.backgroundColor='var(--cor-secundaria)'
+    botaoEscolha1.style.color='white'
+
+    botaoEscolha2.style.backgroundColor='rgb(246, 246, 246)'
+    botaoEscolha2.style.color='var(--cor-secundaria)'
+    
+    botaoEscolha3.style.backgroundColor='rgb(246, 246, 246)'
+    botaoEscolha3.style.color='var(--cor-secundaria)'
+}
+
+function clickAlcance() {
+    card1.innerHTML = `
+        <div class="historia-card-item">
+        <div class="historia-card-header">
+            <i class="bi bi-bar-chart"></i>
+            <h5 class="historia-card-titulo">TRANSFORME A WEB EM SEU ESCRITÓRIO DE VENDAS</h5>
+        </div>
+        <p class="historia-card-paragrafo">
+            Com as DoisDev seu negócio se torna cada vez mais rentável e atraindo ainda mais
+            clientes,
+            para que sua empresa/negócio cresça ainda mais.
+        </p>
+    </div>
+    `;
+
+    card2.innerHTML = `
+        <div class="historia-card-item">
+        <div class="historia-card-header">
+            <i class="bi bi-bar-chart"></i>
+            <h5 class="historia-card-titulo">SUBINDO NO RANKING</h5>
+        </div>
+        <p class="historia-card-paragrafo">
+            Nós nos empenhamos e desenvolvemos seu site com as melhores táticas para um melhor posicionamento e liderar
+            as buscas nos navegadores web.
+        </p>
+    </div>
+    `;
+
+    card3.innerHTML = `
+    <div class="historia-card-item">
+        <div class="historia-card-header">
+            <i class="bi bi-bar-chart"></i>
+            <h5 class="historia-card-titulo">DEIXE SUA MARCA REGISTRADA</h5>
+        </div>
+        <p class="historia-card-paragrafo">
+            Com os nossos serviços temos a oportunidade de gerar mais propriedade e autenticidade a sua marca, elevando a sua empresa ao patamar que ela merece.
+        </p>
+    </div>
+    `;
+
+    botaoEscolha2.style.backgroundColor='var(--cor-secundaria)'
+    botaoEscolha2.style.color='white'
+
+    botaoEscolha1.style.backgroundColor='rgb(246, 246, 246)'
+    botaoEscolha1.style.color='var(--cor-secundaria)'
+    
+    botaoEscolha3.style.backgroundColor='rgb(246, 246, 246)'
+    botaoEscolha3.style.color='var(--cor-secundaria)'
+}
+
+function clickQualidade() {
+    card1.innerHTML = `
+        <div class="historia-card-item">
+        <div class="historia-card-header">
+            <i class="bi bi-award"></i>
+            <h5 class="historia-card-titulo">INVISTA EM TEMPO E QUALIDADE</h5>
+        </div>
+        <p class="historia-card-paragrafo">
+            A DoisDev impulsiona o seu produto e otimiza o seu tempo, simplificando a suas tarefas e contato com os
+            clientes, para você focar no que importa e otimizar o seu tempo.
+        </p>
+    </div>
+    `;
+
+    card2.innerHTML = `
+        <div class="historia-card-item">
+        <div class="historia-card-header">
+            <i class="bi bi-award"></i>
+            <h5 class="historia-card-titulo">DEMONSTRE QUALIDADE</h5>
+        </div>
+        <p class="historia-card-paragrafo">
+            Assim como só trabalhamos com negócios de qualidade, o seu site precisa manter esse padrão e conosco isso é
+            garantido, trazendo novos clientes impressionados com o seu serviço transmitido pela tela dos dispositivo.
+        </p>
+    </div>
+    `;
+
+    card3.innerHTML = `
+    <div class="historia-card-item">
+        <div class="historia-card-header">
+            <i class="bi bi-award"></i>
+            <h5 class="historia-card-titulo">BUSCANDO A PERFEIÇÃO</h5>
+        </div>
+        <p class="historia-card-paragrafo">
+            Temos o objetivo de criar seu site de forma perfeita, unindo suas ideias às nossas e transformando-as em um site incrível e de extrema qualidade, agradando seu cliente em potencial.
+        </p>
+    </div>
+    `;
+
+    botaoEscolha3.style.backgroundColor='var(--cor-secundaria)'
+    botaoEscolha3.style.color='white'
+
+    botaoEscolha1.style.backgroundColor='rgb(246, 246, 246)'
+    botaoEscolha1.style.color='var(--cor-secundaria)'
+    
+    botaoEscolha2.style.backgroundColor='rgb(246, 246, 246)'
+    botaoEscolha2.style.color='var(--cor-secundaria)'
+}

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dois dev</title>
+    <link rel="shortcut icon" href="./assets/logo-favicon-site.png" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -23,12 +24,14 @@
                 <i class="fas fa-times" style="display:none;"></i>
             </button>
             <ul class="header-ul">
-                <li><a class="header-link" href="#historia">Nosso propósito</a></li>
-                <li><a class="header-link" href="#servicos">Serviços</a></li>
-                <li><a class="header-link" href="#contato">Contato</a></li>
+                <li><a class="header-link header-link1" href="#historia">Nosso propósito</a></li>
+                <li><a class="header-link header-link2" href="#servicos">Serviços</a></li>
+                <li><a class="header-link header-link3" href="#contato">Contato</a></li>
                 <li class="header-link-icons">
-                    <img class="header-link-icon" onclick="changeLanguage('pt-br')" src="./assets/brasil-icon.png" alt="icone da bandeira do Brasil em forma de circulo para traduzir para português">
-                    <img class="header-link-icon" onclick="changeLanguage('en')" src="./assets/usa-icon.png" alt="icone da bandeira dos Estados Unidos em forma de circulo para traduzir para inglês">
+                    <img class="header-link-icon" onclick="changeLanguage('pt-br')" src="./assets/brasil-icon.png"
+                        alt="icone da bandeira do Brasil em forma de circulo para traduzir para português">
+                    <img class="header-link-icon" onclick="changeLanguage('en')" src="./assets/usa-icon.png"
+                        alt="icone da bandeira dos Estados Unidos em forma de circulo para traduzir para inglês">
                 </li>
             </ul>
         </nav>
@@ -37,10 +40,11 @@
         <section class="principal">
             <div class="principal-container-titulo">
                 <img src="./assets/logo-azul.svg" alt="Logo da empresa, com o nome Dois Dev" class="principal-logo">
-                <p class="principal-paragrafo">Impulsione sua <strong
-                        class="principal-paragrafo-destaque">credibilidade</strong> e alcance com sites projetados para
-                    transformar visitantes em clientes
-                    fiéis.</p>
+                <p class="principal-paragrafo">Impulsione seu negócio e <strong
+                        class="principal-paragrafo-destaque">aumente seu alcance</strong> com as nossas estratégias
+                    minuciosamente desenvolvidas <strong class="principal-paragrafo-destaque">para atingir o seu
+                        cliente</strong> e transformar cliques em <strong class="principal-paragrafo-destaque">vendas <i
+                            class="bi bi-graph-up-arrow fs-5"></i></strong></p>
             </div>
             <h2 class="principal-sabermais">QUER SABER MAIS... <button class="border-0 bg-transparent"><a
                         href="#historia"><i class="bi bi-arrow-down-circle-fill"></i></a></button></h2>
@@ -49,12 +53,14 @@
             <div class="historia-container container">
                 <div class="historia-container-texto">
                     <h1 class="historia-titulo">NOSSO PROPÓSITO</h1>
-                    <div class="historia-topicos">
-                        <div class="historia-topicos-card"></div>
-                        <div class="historia-topicos-card"></div>
-                        <div class="historia-topicos-card"></div>
-                        <div class="historia-topicos-card"></div>
-                    </div>
+                    <p class="historia-paragrafo">
+                        A DoisDev surgiu com o propósito de ajudar empresas e prestadores de serviços a aproveitarem a
+                        tecnologia a seu favor. Focamos na criação de sites que impulsionam e fortalecem o seu negócio,
+                        proporcionando maior visibilidade e credibilidade. Um site bem elaborado atrai mais clientes e
+                        facilita a vida tanto do cliente quanto da empresa ou prestador de serviços. No cenário atual,
+                        em que a tecnologia desempenha um papel central em nossas vidas, estamos prontos para atualizar
+                        o seu negócio e conectá-lo ao mundo moderno.
+                    </p>
                 </div>
                 <div>
                     <div class="fundo-img-historia">
@@ -69,26 +75,32 @@
                         class="historia-container-titulo-strong">ESCOLHA CERTA</strong> PARA O SEU NEGÓCIO <button
                         class="border-0 bg-transparent"><a href="#escolha-container"><i
                                 class="bi bi-arrow-down-circle-fill"></i></a></button></h4>
+                <div class="historia-container-escolha-buttons">
+                    <button class="historia-container-escolha-button cor-botao-escolha btn1"
+                        onclick="clickPerformance()">Performance</button>
+                    <button class="historia-container-escolha-button btn2" onclick="clickAlcance()">Alcance</button>
+                    <button class="historia-container-escolha-button btn3" onclick="clickQualidade()">Qualidade</button>
+                </div>
                 <div class="historia-cards row mx-0 g-2" id="escolha-container">
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3" data-aos="fade-right" data-aos-offset="200"
+                    <div class="col-12 col-md-4 historia-card-1" data-aos="fade-right" data-aos-offset="200"
                         data-aos-easing="ease-in-sine" data-aos-duration="700">
                         <div class="historia-card-item">
-                            <div class="d-flex gap-2">
-                                <i class="bi bi-cash-coin historia-card-icon"></i>
-                                <h5 class="historia-card-titulo">TRANSFORME A WEB EM SEU ESCRITÓRIO DE VENDAS</h5>
+                            <div class="historia-card-header">
+                                <i class="bi bi-coin"></i>
+                                <h5 class="historia-card-titulo">VELOCIDADE E PERFORMANCE</h5>
                             </div>
                             <p class="historia-card-paragrafo">
-                                Com as DoisDev seu negócio se torna cada vez mais rentável e atraindo ainda mais
-                                clientes,
-                                para que sua empresa/negócio cresça ainda mais.
+                                Com a nossa equipe, otimizamos o código e deixamos seu site liso igual sabonete,
+                                acessível em
+                                qualquer dispositivo.
                             </p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3" data-aos="fade-right" data-aos-offset="200"
+                    <div class="col-12 col-md-4 historia-card-2" data-aos="fade-right" data-aos-offset="200"
                         data-aos-easing="ease-in-sine" data-aos-duration="700">
                         <div class="historia-card-item">
-                            <div class="d-flex gap-2">
-                                <i class="bi bi-activity historia-card-icon"></i>
+                            <div class="historia-card-header">
+                                <i class="bi bi-coin"></i>
                                 <h5 class="historia-card-titulo">FOCO NOS RESULTADOS</h5>
                             </div>
                             <p class="historia-card-paragrafo">
@@ -97,31 +109,17 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3" data-aos="fade-right" data-aos-offset="200"
+                    <div class="col-12 col-md-4 historia-card-3" data-aos="fade-right" data-aos-offset="200"
                         data-aos-easing="ease-in-sine" data-aos-duration="700">
                         <div class="historia-card-item">
-                            <div class="d-flex gap-2">
-                                <i class="bi bi-vector-pen historia-card-icon"></i>
-                                <h5 class="historia-card-titulo">DEIXE A SUA MARCA REGISTRADA</h5>
+                            <div class="historia-card-header">
+                                <i class="bi bi-coin"></i>
+                                <h5 class="historia-card-titulo">SEM ESTRESSE</h5>
                             </div>
                             <p class="historia-card-paragrafo">
-                                Com os nossos serviços temos a oportunidade de gerar mais propriedade e autenticidade a
-                                sua
-                                marca, elevando a sua empresa ao patamar que ela merece.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3" data-aos="fade-right" data-aos-offset="200"
-                        data-aos-easing="ease-in-sine" data-aos-duration="700">
-                        <div class="historia-card-item">
-                            <div class="d-flex gap-2">
-                                <i class="bi bi-alarm historia-card-icon"></i>
-                                <h5 class="historia-card-titulo">INVISTA EM TEMPO E QUALIDADE</h5>
-                            </div>
-                            <p class="historia-card-paragrafo">
-                                A DoisDev impussiona o seu produto e otimiza o seu tempo,
-                                simplificando a suas tarefas e contato com os clientes, para você focar no que importa e
-                                otimizar o seu tempo.
+                                Com as nossas capacidades, criamos e modificamos seu site para que o cliente não se
+                                estresse com algum erro ou travamento na hora de usar, garantindo qualidade e 5 estrelas
+                                de contentamento do cliente
                             </p>
                         </div>
                     </div>
@@ -152,12 +150,10 @@
                             <div id="collapseOne" class="accordion-collapse collapse show"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    Nós, da DoisDev, temos como objetivo criar o seu site de forma eficaz e otimizada,
+                                    utilizando apenas os recursos necessários e personalizados para as suas demandas.
+                                    Assim, garantimos que o seu site seja objetivo e direcionado para o seu nicho de
+                                    clientes.
                                 </div>
                             </div>
                         </div>
@@ -172,12 +168,10 @@
                             <div id="collapseTwo" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    Além do nosso serviço de criação de sites, também oferecemos serviços de manutenção
+                                    para o seu site. Sites com maior complexidade em casos específicos podem precisar de
+                                    manutenção esporádica, e nada melhor do que confiar essa manutenção aos criadores
+                                    originais, certo?
                                 </div>
                             </div>
                         </div>
@@ -192,12 +186,9 @@
                             <div id="collapseThree" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    Como um 'extra' do nosso serviço, disponibilizamos um suporte personalizado para
+                                    você e seu site, auxiliando em dúvidas e bugs que possam surgir. Estamos sempre
+                                    disponíveis para atualizar o seu site e resolver eventuais problemas.
                                 </div>
                             </div>
                         </div>
@@ -213,33 +204,37 @@
             <div class="contato-opcoes">
                 <div class="contato-frase">
                     <h5 class="contato-frase-titulo"><i class="bi bi-geo-alt"></i> Onde nos encontrar...</h5>
-                    <p class="contato-frase-paragrafo">Estamos localizados exatamente aqui, no seu dipositivo, fácil e simples de nos achar... <i class="bi bi-emoji-wink"></i></p>
+                    <p class="contato-frase-paragrafo">Estamos localizados exatamente aqui, no seu dipositivo, fácil e
+                        simples de nos achar... <i class="bi bi-emoji-wink"></i></p>
                 </div>
-                <div class="contato-container">
-                    <a href="" class="topico-contato">
-                        <div class="icon-contato">
-                            <i class="bi bi-envelope"></i>
-                        </div>
-                        <p class="m-0 p-1">doisdev@gmail.com</p>
-                    </a>
-                    <a href="" class="topico-contato">
-                        <div class="icon-contato">
-                            <i class="bi bi-whatsapp"></i>
-                        </div>
-                        <p class="m-0 p-1">+55 75 99150-4950</p>
-                    </a>
-                    <a href="" class="topico-contato">
-                        <div class="icon-contato">
-                            <i class="bi bi-whatsapp"></i>
-                        </div>
-                        <p class="m-0 p-1">+55 75 99143-6121</p>
-                    </a>
-                    <a href="" class="topico-contato">
-                        <div class="icon-contato">
-                            <i class="bi bi-instagram"></i>
-                        </div>
-                        <p class="m-0 p-1">@doisdev</p>
-                    </a>
+                <div class="contato-redes">
+                    <h5 class="contato-frase-titulo"><i class="bi bi-phone"></i> Nos contate por aqui</h5>
+                    <div class="contato-links">
+                        <a href="" class="topico-contato">
+                            <div class="icon-contato">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <p class="m-0 p-1">doisdev@gmail.com</p>
+                        </a>
+                        <a href="" class="topico-contato">
+                            <div class="icon-contato">
+                                <i class="bi bi-whatsapp"></i>
+                            </div>
+                            <p class="m-0 p-1">+55 75 99150-4950</p>
+                        </a>
+                        <a href="" class="topico-contato">
+                            <div class="icon-contato">
+                                <i class="bi bi-whatsapp"></i>
+                            </div>
+                            <p class="m-0 p-1">+55 75 99143-6121</p>
+                        </a>
+                        <a href="" class="topico-contato">
+                            <div class="icon-contato">
+                                <i class="bi bi-instagram"></i>
+                            </div>
+                            <p class="m-0 p-1">@doisdev</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

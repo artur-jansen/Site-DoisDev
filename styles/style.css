@@ -47,7 +47,7 @@ body{
 
 .header.scrolled{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33);
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .header-logo{
@@ -176,7 +176,6 @@ section{
 
 .historia-container{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 12px;
     flex-grow: 1;
@@ -189,21 +188,6 @@ section{
     font-weight: 600;
     padding-top: 1em;
     
-}
-
-.historia-topicos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-}
-
-.historia-topicos-card{
-    background-color: rgba(190, 190, 190, 0.293);
-    width: 500px;
-    height: 50px;
-    border-radius: 12px;
 }
 
 .img-historia{
@@ -219,7 +203,7 @@ section{
 }
 
 .historia-container-escolha{
-    background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 41%, #0D6EFC 100%);
+    background: linear-gradient(to bottom, #FFFFFF 0%, #ffffff 41%, #0D6EFC 100%);
     padding: 12px;
 }
 
@@ -233,15 +217,36 @@ section{
     color: var(--cor-azul-claro);
 }
 
+.historia-container-escolha-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 1em;
+}
+
+.historia-container-escolha-button{
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.23);
+    background-color: rgb(246, 246, 246);
+    color: var(--cor-secundaria);
+    font-size: 1.06em;
+}
+
+.cor-botao-escolha{
+    background-color: var(--cor-secundaria);
+    color: white;
+}
+
 .historia-card-item{
-    background-color: rgb(254, 255, 255);
-    border: 2px solid var(--cor-secundaria);
+    background-color: white;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.43);
     border-radius: 8px;
-    padding: 8px;
-    height: 200px;
+    height: 250px;
     display: flex;
     flex-direction: column;
-    gap: 1em;
 }
 
 .historia-card-item:hover{
@@ -251,9 +256,17 @@ section{
     background-color: rgb(252, 252, 252);
 }
 
+.historia-card-header{
+    background-color: var(--cor-secundaria);
+    color: white;
+    display: flex;
+    gap: 0.5em;
+    padding: 10px;
+    border-radius: 8px 8px 0px 0px;
+}
+
 .historia-card-icon{
     font-size: 1em;
-    color: var(--cor-azul-claro);
     padding: 4px;
     display: flex;
     align-items: center;
@@ -262,9 +275,13 @@ section{
 
 .historia-card-titulo{
     font-size: 1em;
-    color: var(--cor-azul-claro);
     margin: 0;
 }
+
+.historia-card-paragrafo{
+    padding: 8px;
+}
+
 .historia-card-contato{
     display: flex;
     align-items: center;
@@ -274,7 +291,7 @@ section{
 }
 
 .historia-card-botao-contato{
-    background-color: rgb(232, 231, 231);
+    background-color: rgb(246, 246, 246);
     border: none;
     border-radius: 26px;
     text-decoration: none;
@@ -287,8 +304,8 @@ section{
 .historia-card-botao-contato:hover {
     transition: 600ms;
     transform: scale(1.03);
-    cursor: pointer;
     background-color: var(--cor-secundaria);
+    cursor: pointer;
 }
 
 .historia-card-botao-contato-link{
@@ -403,22 +420,23 @@ section{
 .contato-opcoes{
     display: flex;
     justify-content: space-between;
-    gap: 10em;
+    gap: 5em;
     padding-top: 3em;
     height: 100%;
 }
 
-.contato-container, .contato-frase{
+.contato-redes, .contato-frase{
     background-color: var(--cor-azul-clarinho);
     padding: 12px;
     border-radius: 24px;
 }
 
-.contato-container{
+.contato-links{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 3em;
+    padding-top: 1em;
 }
 
 .topico-contato{
@@ -561,7 +579,7 @@ footer p{
     }
 
     .header-ul{
-        background-color: rgba(255, 255, 255, 0.934);
+        background-color: white;
         border-radius: 0px 0px 4px 4px;
         position: fixed;
         transition: 1s ease-out;
@@ -594,6 +612,11 @@ footer p{
 
     .header-link-icon{
         width: 48px;
+    }
+
+    .header-link-icon:hover{
+        transform: scale(2.15);
+        box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.83);
     }
 
     /* PRINCIPAL */
