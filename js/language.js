@@ -1,31 +1,38 @@
-const translations = {
-    pt: {
-        headerLink1: "Nosso propósito",
-        headerLink2: "Serviços",
-        headerLink3: "Contato",
-        paragrafoPrincipal: "Impulsione seu negócio e aumente seu alcance com as nossas estratégias minuciosamente desenvolvidas para atingir o seu cliente e transformar cliques em vendas ",
-        saberMaisPrincipal: "QUER SABER MAIS...",
-
-    },
-    en: {
-        headerLink1:"Our purpose",
-        headerLink2:"Services",
-        headerLink3:"Contact",
-        paragrafoPrincipal: "Boost your business and increase your reach with our carefully developed strategies to reach your customer and turn clicks into sales",
-        saberMaisPrincipal: "WANT TO KNOW MORE...",
-
+function translateText(node, translations) {
+    if (node.nodeType === 3) {
+        const textContent = node.nodeValue.trim();
+        if (textContent.length > 0) {
+            const translatedText = translations[textContent];
+            if (translatedText) {
+                node.nodeValue = translatedText;
+            }
+        }
+    } else {
+        node.childNodes.forEach(child => translateText(child, translations));
     }
-};
-
-function changeLanguage(language) {
-    document.querySelector('.header-link1').textContent =translations[language].headerLink1
-    document.querySelector('.header-link2').textContent =translations[language].headerLink2
-    document.querySelector('.header-link3').textContent =translations[language].headerLink3
-    document.querySelector('.principal-paragrafo').textContent =translations[language].paragrafoPrincipal
-    document.querySelector('.principal-sabermais').textContent =translations[language].saberMaisPrincipal
-
 }
 
-window.onload = function() {
+function changeLanguage(language) {
+    const translations = {
+        'en': {
+            'Nosso propósito': 'Our purpose',
+            
+        },
+        'pt': {
+            'Our purpose': 'Nosso propósito',
+            
+        }
+    };
+
+    document.querySelectorAll('body *').forEach(node => {
+        translateText(node, translations[language]);
+    });
+}
+
+document.querySelector('.header-link-icon[alt="icone da bandeira dos Estados Unidos em forma de circulo para traduzir para inglês"]').addEventListener('click', () => {
+    changeLanguage('en');
+});
+
+document.querySelector('.header-link-icon[alt="icone da bandeira do Brasil em forma de circulo para traduzir para português"]').addEventListener('click', () => {
     changeLanguage('pt');
-};
+});
