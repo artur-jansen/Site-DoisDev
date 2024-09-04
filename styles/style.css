@@ -184,8 +184,17 @@ section{
 .historia-container{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     padding: 12px;
     flex-grow: 1;
+}
+
+.historia-subcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    flex-grow: 1;  
 }
 
 .historia-titulo{
@@ -195,6 +204,13 @@ section{
     font-weight: 600;
     padding-top: 1em;
     
+}
+
+.historia-paragrafo{
+    width: 60%;
+    margin-top: 1em;
+    font-size: 1.2em;
+    font-weight: 500;
 }
 
 .img-historia{
@@ -639,13 +655,21 @@ footer p{
 
     /* HISTORIA */
 
-    .historia-container{
+    .historia-subcontainer{
         flex-direction: column;
+    }
+
+    .historia-paragrafo{
+        width: 100%;
     }
 
     /* ESCOLHA */
     .historia-card-botao-contato{
         width: 100%;
+    }
+
+    .historia-card-paragrafo{
+        padding: 2px;
     }
 
     /* SERVICOS */
