@@ -148,14 +148,21 @@ section{
 }
 
 .principal-paragrafo{
-    width: 600px;
-    font-weight: 700;
     color: var(--cor-cinza);
+    width: 600px;
     font-size: 1.5em;
+    font-weight: 700;
+    word-spacing: 0.1em;
 }
 
 .principal-paragrafo-destaque{
     color: var(--cor-secundaria);
+    margin: 0 0.2em;
+}
+
+.principal-paragrafo-icon{
+    font-size: 0.8em;
+    margin: 0 0.2em;
 }
 
 .principal-sabermais{
@@ -211,10 +218,16 @@ section{
     color: var(--cor-cinza);
     margin-bottom: 1.5em;
     font-family: 'Roboto', sans-serif;
+    word-spacing: 0.1em;
 }
 
 .historia-container-titulo-strong{
     color: var(--cor-azul-claro);
+    margin: 0 0.2em;
+}
+
+.historia-container-icon{
+    margin-left: 0.3em;
 }
 
 .historia-container-escolha-buttons{
@@ -612,11 +625,6 @@ footer p{
 
     .header-link-icon{
         width: 48px;
-    }
-
-    .header-link-icon:hover{
-        transform: scale(2.15);
-        box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.83);
     }
 
     /* PRINCIPAL */
