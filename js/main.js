@@ -51,9 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-
-
 const resources = {
     en: {
       translation: {
@@ -61,7 +58,7 @@ const resources = {
         "headerLink2": "Services",
         "headerLink3": "Contact",
         "paragrafoPrincipal": "Boost your business and <strong class=\"principal-paragrafo-destaque\">increase your reach</strong> with our carefully developed strategies <strong class=\"principal-paragrafo-destaque\">to reach your customer</strong> and turn clicks into <strong class=\"principal-paragrafo-destaque\">sales <i class=\"bi bi-graph-up-arrow principal-paragrafo-icon\"></i></strong>",
-        "textoSaberMais": "WANT TO KNOW MORE... <button class=\"border-0 bg-transparent\"><a href=\"#historia\"><i class=\"bi bi-arrow-down-circle-fill\"></i></a></button>",
+        "textoSaberMais": "<button class=\"principal-sabermais\" href=\"#historia\"><a href=\"#historia\" class=\"principal-sabermais-link\"><span>WANT TO KNOW MORE...</span></a><i class=\"bi bi-arrow-down-circle-fill icon-card-principal \"></i></button>",
         "tituloProposito": "OUR PURPOSE",
         "paragrafoProposito": "DoisDev was founded to help companies and service providers use technology to their advantage. We focus on creating websites that boost and strengthen your business, providing greater visibility and credibility. A well-designed website attracts more clients and makes life easier for both the client and the company or service provider. In today's scenario, where technology plays a central role in our lives, we are ready to update your business and connect it to the modern world.",
         "tituloEscolhaCerta": "<h4 class=\"historia-container-titulo\">WHAT MAKES US<strong class=\"historia-container-titulo-strong\">THE RIGHT CHOICE</strong>FOR YOUR BUSINESS <button class=\"border-0 bg-transparent historia-container-icon\"><a href=\"#escolha-container\"><i class=\"bi bi-arrow-down-circle-fill\"></i></a></button></h4>",
@@ -88,12 +85,6 @@ const resources = {
         "qualidade_desc3": "Our goal is to create your site perfectly, combining your ideas with ours and transforming them into an amazing and high-quality site, pleasing your potential client.",
         "botaoEntreContato": "CONTACT US",
         "tituloServicos": "OUR SERVICES",
-        "tituloServico1": "Creating fast and effective websites",
-        "tituloServico2": "Maintaining your website",
-        "tituloServico3": "Empowered support for your site",
-        "paragrafoServico1": "We at DoisDev aim to create your website in an effective and optimized way, using only the resources that are necessary and customized to your demands. In this way, we ensure that your site is objective and targeted at your niche customers.",
-        "paragrafoServico2": "In addition to our website creation service, we also offer maintenance services for your site. Sites with greater complexity in specific cases may need occasional maintenance, and there's nothing better than entrusting that maintenance to the original creators, right?",
-        "paragrafoServico3": "As an extra part of our service, we provide personalized support for you and your site, helping with any doubts or bugs that may arise. We are always available to update your site and resolve any problems.",
         "contatoTitulo": "CONTACT",
         "contatoTituloCard1": "Where to find us...",
         "contatoParagrafoCard1": "We are located right here on your device, easy and simple to find... <i class=\"bi bi-emoji-wink\">",
@@ -107,7 +98,7 @@ const resources = {
         "headerLink2": "Serviços",
         "headerLink3": "Contato",
         "paragrafoPrincipal": "Impulsione seu negócio e <strong class=\"principal-paragrafo-destaque\">aumente seu alcance</strong> com as nossas estratégias minuciosamente desenvolvidas <strong class=\"principal-paragrafo-destaque\">para atingir o seu cliente</strong> e transformar cliques em <strong class=\"principal-paragrafo-destaque\">vendas <i class=\"bi bi-graph-up-arrow principal-paragrafo-icon\"></i></strong>",
-        "textoSaberMais": "QUER SABER MAIS... <button class=\"border-0 bg-transparent\"><a href=\"#historia\"><i class=\"bi bi-arrow-down-circle-fill\"></i></a></button>",
+        "textoSaberMais": "<button class=\"principal-sabermais\" href=\"#historia\"><a href=\"#historia\" class=\"principal-sabermais-link\"><span>QUER SABER MAIS...</span></a><i class=\"bi bi-arrow-down-circle-fill icon-card-principal \"></i></button>",
         "tituloProposito": "NOSSO PROPÓSITO",
         "paragrafoProposito": "A DoisDev surgiu com o propósito de ajudar empresas e prestadores de serviços a aproveitarem a tecnologia a seu favor. Focamos na criação de sites que impulsionam e fortalecem o seu negócio, proporcionando maior visibilidade e credibilidade. Um site bem elaborado atrai mais clientes e facilita a vida tanto do cliente quanto da empresa ou prestador de serviços. No cenário atual, em que a tecnologia desempenha um papel central em nossas vidas, estamos prontos para atualizar o seu negócio e conectá-lo ao mundo moderno.",
         "tituloEscolhaCerta": "<h4 class=\"historia-container-titulo\">O QUE NOS TORNA A<strong class=\"historia-container-titulo-strong\">ESCOLHA CERTA</strong>PARA O SEU NEGÓCIO <button class=\"border-0 bg-transparent historia-container-icon\"><a href=\"#escolha-container\"><i class=\"bi bi-arrow-down-circle-fill\"></i></a></button></h4>",
@@ -134,12 +125,6 @@ const resources = {
         "qualidade_desc3": "Temos o objetivo de criar seu site de forma perfeita, unindo suas ideias às nossas e transformando-as em um site incrível e de extrema qualidade, agradando seu cliente em potencial.",
         "botaoEntreContato": "ENTRE EM CONTATO",
         "tituloServicos": "NOSSOS SERVIÇOS",
-        "tituloServico1": "Criação de sites rápidos e eficazes",
-        "tituloServico2": "Manutenção do seu site",
-        "tituloServico3": "Suporte capacitado ao seu site",
-        "paragrafoServico1": "Nós, da DoisDev, temos como objetivo criar o seu site de forma eficaz e otimizada, utilizando apenas os recursos necessários e personalizados para as suas demandas. Assim, garantimos que o seu site seja objetivo e direcionado para o seu nicho de clientes.",
-        "paragrafoServico2": "Além do nosso serviço de criação de sites, também oferecemos serviços de manutenção para o seu site. Sites com maior complexidade em casos específicos podem precisar de manutenção esporádica, e nada melhor do que confiar essa manutenção aos criadores originais, certo?",
-        "paragrafoServico3": "Como um 'extra' do nosso serviço, disponibilizamos um suporte personalizado para você e seu site, auxiliando em dúvidas e bugs que possam surgir. Estamos sempre disponíveis para atualizar o seu site e resolver eventuais problemas.",
         "contatoTitulo": "CONTATO",
         "contatoTituloCard1": "Onde nos encontrar...",
         "contatoParagrafoCard1": "Estamos localizados exatamente aqui, no seu dipositivo, fácil e simples de nos achar... <i class=\"bi bi-emoji-wink\">",
@@ -222,24 +207,6 @@ const resources = {
 
     const tituloServicos = document.querySelector('.servicos-titulo');
     tituloServicos.innerHTML = i18next.t('tituloServicos');
-    
-    const tituloServico1 = document.querySelector('.titulo-servicos1');
-    tituloServico1.innerHTML = i18next.t('tituloServico1');
-    
-    const tituloServico2 = document.querySelector('.titulo-servicos2');
-    tituloServico2.innerHTML = i18next.t('tituloServico2');
-    
-    const tituloServico3 = document.querySelector('.titulo-servicos3');
-    tituloServico3.innerHTML = i18next.t('tituloServico3');
-    
-    const paragrafoServico1 = document.querySelector('.paragrafo-servicos1');
-    paragrafoServico1.innerHTML = i18next.t('paragrafoServico1');
-    
-    const paragrafoServico2 = document.querySelector('.paragrafo-servicos2');
-    paragrafoServico2.innerHTML = i18next.t('paragrafoServico2');
-    
-    const paragrafoServico3 = document.querySelector('.paragrafo-servicos3');
-    paragrafoServico3.innerHTML = i18next.t('paragrafoServico3');
     
     const contatoTitulo = document.querySelector('.contato-titulo');
     contatoTitulo.innerHTML = i18next.t('contatoTitulo');
@@ -413,3 +380,31 @@ function clickQualidade() {
     botaoEscolha2.style.backgroundColor='rgb(246, 246, 246)';
     botaoEscolha2.style.color='var(--cor-secundaria)';
 }
+
+const cardCriacao = document.querySelector('.img-card-criacao');
+const cardManutencao = document.querySelector('.img-card-manutencao');
+const cardSuporte = document.querySelector('.img-card-suporte');
+
+function traduzEn(){
+    cardCriacao.innerHTML='<img class="img-servicos" src="./assets/criacao-img-ingles.png" alt="Card image with the title Creation and text describing it">'
+    cardManutencao.innerHTML='<img class="img-servicos" src="./assets/manutencao-img-ingles.png" alt="Card image with the title Maintenance and text describing it">'
+    cardSuporte.innerHTML='<img class="img-servicos" src="./assets/suporte-img-ingles.png" alt="Card image with the title Support and text describing it">'
+}
+
+function traduzPt(){
+    cardCriacao.innerHTML='<img class="img-servicos" src="./assets/criacao-img.png" alt="Imagem de card com o titulo Criação e texto descrevendo">'
+    cardManutencao.innerHTML='<img class="img-servicos" src="./assets/manutencao-img.png" alt="Imagem de card com o titulo Manutenção e texto descrevendo">'
+    cardSuporte.innerHTML='<img class="img-servicos" src="./assets/suporte-img.png" alt="Imagem de card com o titulo Suporte e texto descrevendo">'
+}
+
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true
+    });
+});
