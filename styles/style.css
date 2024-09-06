@@ -184,6 +184,7 @@ section {
     align-items: center;
     justify-content: center;
     font-size: 1.3em;
+
 }
 
 .principal-sabermais:hover {
@@ -194,6 +195,8 @@ section {
 }
 
 .principal-sabermais-link {
+    display: inline-block;
+    padding: 12px 24px;
     color: white;
     text-decoration: none;
     background-color: transparent;
@@ -297,6 +300,8 @@ section {
 
 .historia-container-icon {
     margin-left: 0.3em;
+    margin: 10px;
+    padding: 12px;
 }
 
 .historia-container-escolha-buttons {
@@ -312,7 +317,7 @@ section {
     border: none;
     border-radius: 6px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.23);
-    background-color: rgb(246, 246, 246);
+    background-color: white;
     color: var(--cor-secundaria);
     font-size: 1.06em;
 }
@@ -373,7 +378,7 @@ section {
 }
 
 .historia-card-botao-contato {
-    background-color: rgb(246, 246, 246);
+    background-color: white;
     border: none;
     border-radius: 26px;
     text-decoration: none;

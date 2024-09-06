@@ -23,13 +23,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- <link rel="stylesheet" href="https://www.doisdev.com/styles/style.css"> -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
     <header class="header">
         <nav class="header-nav">
-            <a href="#"><img class="header-logo" src="./assets/logo-azul.svg" alt="Logotipo da DoisDev, agência de desenvolvimento web"></a>
+            <a href="#"><img loading="lazy" class="header-logo" src="./assets/logo-azul.svg" alt="Logotipo da DoisDev, agência de desenvolvimento web"></a>
             <button class="header-hamburguer navbar-toggler" aria-label="Abrir menu de navegação">
                 <i class="fas fa-bars"></i>
                 <i class="fas fa-times" style="display:none;"></i>
@@ -39,10 +40,10 @@
                 <li><a class="header-link header-link2" href="#servicos">Serviços</a></li>
                 <li><a class="header-link header-link3" href="#contato">Contato</a></li>
                 <li class="header-link-icons">
-                    <img class="header-link-icon" id="btn-pt" src="./assets/brasil-icon.png"
+                    <img loading="lazy" class="header-link-icon" id="btn-pt" src="./assets/brasil-icon.png"
                         alt="icone da bandeira do Brasil em forma de circulo para traduzir para português"
                         onclick="traduzPt()">
-                    <img class="header-link-icon" id="btn-en" src="./assets/usa-icon.png"
+                    <img loading="lazy" class="header-link-icon" id="btn-en" src="./assets/usa-icon.png"
                         alt="icone da bandeira dos Estados Unidos em forma de circulo para traduzir para inglês"
                         onclick="traduzEn()">
                 </li>
@@ -52,7 +53,7 @@
     <main>
         <section class="principal">
             <div class="principal-container-titulo">
-                <img src="./assets/logo-azul.svg" alt="Logotipo da DoisDev na seção principal, agência de desenvolvimento web" class="principal-logo">
+                <img loading="lazy" src="./assets/logo-azul.svg" alt="Logotipo da DoisDev na seção principal, agência de desenvolvimento web" class="principal-logo">
                 <p class="principal-paragrafo">Impulsione seu negócio e <strong class="principal-paragrafo-destaque">aumente seu alcance</strong> com as nossas estratégias minuciosamente desenvolvidas <strong class="principal-paragrafo-destaque">para atingir o seu cliente</strong> e transformar cliques em <strong class="principal-paragrafo-destaque">vendas <i class="bi bi-graph-up-arrow principal-paragrafo-icon"></i></strong></p>
             </div>
             <div class="principal-container-sabermais">
@@ -87,7 +88,7 @@
             </div>
 
             <div class="historia-container-escolha" id="escolha">
-                <h4 class="historia-container-titulo">O QUE NOS TORNA A<strong class="historia-container-titulo-strong">ESCOLHA CERTA</strong>PARA O SEU NEGÓCIO <button class="border-0 bg-transparent historia-container-icon"><a href="#escolha-container"><i class="bi bi-arrow-down-circle-fill"></i></a></button></h4>
+                <h2 class="historia-container-titulo">O QUE NOS TORNA A<strong class="historia-container-titulo-strong">ESCOLHA CERTA</strong>PARA O SEU NEGÓCIO <button class="border-0 bg-transparent historia-container-icon" aria-label="Direcionar para cards de motivos de escolha"><a href="#escolha-container" aria-label="Ir para a seção de escolha"><i class="bi bi-arrow-down-circle-fill"></i></a></button></h2>
                 <div class="historia-container-escolha-buttons">
                     <button class="historia-container-escolha-button cor-botao-escolha btn1 btnPerformance pulsate-on-hover" aria-label="Olhar cards de Performance" onclick="clickPerformance()">Performance</button>
                     <button class="historia-container-escolha-button btn2 btnAlcance pulsate-on-hover" aria-label="Olhar cards de Alcance" onclick="clickAlcance()">Alcance</button>
@@ -98,7 +99,7 @@
                         <div class="historia-card-item">
                             <div class="historia-card-header">
                                 <i class="bi bi-coin"></i>
-                                <h5 class="historia-card-titulo titulo-performance1">VELOCIDADE E PERFORMANCE</h5>
+                                <h3 class="historia-card-titulo titulo-performance1">VELOCIDADE E PERFORMANCE</h3>
                             </div>
                             <p class="historia-card-paragrafo performance-1">
                                 Com a nossa equipe, otimizamos o código e deixamos seu site liso igual sabonete,
@@ -110,7 +111,7 @@
                         <div class="historia-card-item">
                             <div class="historia-card-header">
                                 <i class="bi bi-coin"></i>
-                                <h5 class="historia-card-titulo titulo-performance2">FOCO NOS RESULTADOS</h5>
+                                <h3 class="historia-card-titulo titulo-performance2">FOCO NOS RESULTADOS</h3>
                             </div>
                             <p class="historia-card-paragrafo performance-2">
                                 A DoisDev tem a prioridade e capacidade de entregar resultados que realmente fazem a
@@ -122,7 +123,7 @@
                         <div class="historia-card-item">
                             <div class="historia-card-header">
                                 <i class="bi bi-coin"></i>
-                                <h5 class="historia-card-titulo titulo-performance3">SEM ESTRESSE</h5>
+                                <h3 class="historia-card-titulo titulo-performance3">SEM ESTRESSE</h3>
                             </div>
                             <p class="historia-card-paragrafo performance-3">
                                 Com as nossas capacidades, criamos e modificamos seu site para que o cliente não
@@ -144,18 +145,18 @@
         </section>
         <section id="servicos">
             <div class="servico-container container">
-                <h2 class="servicos-titulo">Nossos serviços</h2>
+                <h3 class="servicos-titulo">Nossos serviços</h3>
                 <div class="servicos-container">
                     <div class="owl-carousel">
-                        <div class="item img-card-criacao"><img class="img-servicos" src="./assets/criacao-img.png" alt="Imagem de card com o titulo 'Criação' e texto descrevendo"></div>
-                        <div class="item img-card-manutencao"><img class="img-servicos" src="./assets/manutencao-img.png" alt="Imagem de card com o titulo 'Manutenção' e texto descrevendo"></div>
-                        <div class="item img-card-suporte"><img class="img-servicos" src="./assets/suporte-img.png" alt="Imagem de card com o titulo 'Suporte' e texto descrevendo"></div>
+                        <div class="item img-card-criacao"><img loading="lazy" class="img-servicos" src="./assets/criacao-img.png" alt="Imagem de card com o titulo 'Criação' e texto descrevendo"></div>
+                        <div class="item img-card-manutencao"><img loading="lazy" class="img-servicos" src="./assets/manutencao-img.png" alt="Imagem de card com o titulo 'Manutenção' e texto descrevendo"></div>
+                        <div class="item img-card-suporte"><img loading="lazy" class="img-servicos" src="./assets/suporte-img.png" alt="Imagem de card com o titulo 'Suporte' e texto descrevendo"></div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="contato" class="container">
-            <h2 class="text-center pt-5 contato-titulo">Contato</h2>
+            <h4 class="text-center pt-5 contato-titulo">Contato</h4>
             <div class="contato-opcoes">
                 <div class="contato-frase">
                     <h5 class="contato-frase-titulo titulo-contato1"><i class="bi bi-geo-alt"></i>Onde nos encontrar...
@@ -219,7 +220,8 @@
           "url": "https://www.doisdev.com"
         }
     </script>
-    <script src="https://doisdev.com/script.js" async></script>
+    <script src="https://www.doisdev.com/script.js" async></script>
+    <!-- <script src="https://www.doisdev.com/js/main.js"></script> -->
     <script src="./js/main.js"></script>
 </body>
 
