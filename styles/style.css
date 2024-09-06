@@ -86,6 +86,7 @@ body {
 
 .header-link-icon {
     width: 24px;
+    height: auto;
     cursor: pointer;
 }
 
@@ -221,8 +222,6 @@ section {
 
 .principal-sabermais:hover .icon-card-principal{
     background-color: transparent;
-
-
 }
 
 /* HISTORIA */
@@ -266,8 +265,9 @@ section {
     font-weight: 500;
 }
 
-.img-historia {
+#lottie-animation{
     width: 500px;
+    height: 500px;
 }
 
 /* CONTAINER ESCOLHA */
@@ -479,14 +479,27 @@ section {
     justify-content: center;
     gap: 2em;
     padding-top: 2em;
+    background-color: white;
 }
 
 .owl-prev span,.owl-next span{
     background-color: var(--cor-secundaria);
     color: #FFFFFF;
-    font-size: 100px; 
-    text-align: center; 
-    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    height: 40px;
+    padding: 5px 10px 10px 10px; 
+    border-radius: 8px;
+}
+
+.owl-prev span:hover,.owl-next span:hover{
+    transition: 0.3s;
+    transform: scale(1.01);
+    background-color: transparent;
+    color: var(--cor-secundaria);
+    border: 1px solid var(--cor-secundaria);
 }
 
 .item{
@@ -497,7 +510,7 @@ section {
 
 .owl-carousel .owl-item img{
     display: block;
-    width: 30%;
+    width: 24%;
 }
 
 .img-servicos {
@@ -630,6 +643,10 @@ footer p {
         width: 90%;
     }
 
+    .principal-sabermais{
+        font-size: 1.2em;
+    }
+
     /* HISTORIA */
     .historia-container {
         flex-direction: column;
@@ -640,7 +657,7 @@ footer p {
     }
 
     .historia-titulo {
-        font-size: 1em;
+        font-size: 1.5em;
         margin-bottom: 1.5em;
     }
 
@@ -659,7 +676,11 @@ footer p {
 
     /* SERVICOS */
     .servicos-container {
-        padding: 12px;
+        padding: 0;
+    }
+
+    .owl-carousel .owl-item img {
+        width: 200%;
     }
 
     /* CONTATO */
@@ -672,7 +693,7 @@ footer p {
     }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 980px) {
 
     /* HEADER */
     .header-hamburguer {
@@ -681,15 +702,16 @@ footer p {
     }
 
     .header-ul {
-        background-color: white;
-        border-radius: 0px 0px 4px 4px;
         position: fixed;
         transition: 1s ease-out;
         transform: translateX(140%);
+        background-color: white;
+        border-radius: 0px 0px 4px 4px;
         flex-direction: column;
-        align-items: baseline;
+        align-items: center;
+        justify-content: start;
         width: 100vw;
-        height: 80vh;
+        height: 100vh;
         left: 0;
         top: 60px;
         gap: 5em;
@@ -736,6 +758,11 @@ footer p {
         width: 100%;
     }
 
+    #lottie-animation{
+        width: 250px;
+        height: 300px;
+    }
+
     /* ESCOLHA */
     .historia-card-botao-contato {
         width: 100%;
@@ -751,8 +778,8 @@ footer p {
         padding: 54px 64px 0px 64px;
     }
 
-    .img-servicos {
-        width: 38%;
+    .owl-carousel .owl-item img {
+        width: 70%;
     }
 
     /* CONTATO */
