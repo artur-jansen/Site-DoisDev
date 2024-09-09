@@ -133,7 +133,7 @@ const resources = {
             "noStress_desc": "Com as nossas capacidades, criamos e modificamos seu site para que o cliente não se estresse com algum erro ou travamento na hora de usar, garantindo qualidade e 5 estrelas de contentamento do cliente.",
             "alcanceBtn": "Alcance",
             "alcance_title1": "TRANSFORME A WEB EM SEU ESCRITÓRIO DE VENDAS",
-            "alcance_desc1": "Com as DoisDev seu negócio se torna cada vez mais rentável e atraindo ainda mais clientes, para que sua empresa/negócio cresça ainda mais.",
+            "alcance_desc1": "Com a DoisDev seu negócio se torna cada vez mais rentável e atraindo ainda mais clientes, para que sua empresa/negócio cresça ainda mais.",
             "alcance_title2": "SUBINDO NO RANKING",
             "alcance_desc2": "Nós nos empenhamos e desenvolvemos seu site com as melhores táticas para um melhor posicionamento e liderar as buscas nos navegadores web.",
             "alcance_title3": "DEIXE SUA MARCA REGISTRADA",
