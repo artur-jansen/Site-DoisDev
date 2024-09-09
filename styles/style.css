@@ -756,6 +756,10 @@ footer p {
         font-size: 2em;
     }
 
+    .header-link.active .header-ul {
+        display: none;
+    }
+
     .header-link-icons {
         display: flex;
         flex-direction: column;

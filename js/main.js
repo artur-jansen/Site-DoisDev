@@ -1,19 +1,30 @@
 const hamburguer = document.querySelector('.header-hamburguer');
 const nav = document.querySelector('.header-nav');
-
 const toggler = document.querySelector('.navbar-toggler');
 const iconBars = toggler.querySelector('.fa-bars');
 const iconTimes = toggler.querySelector('.fa-times');
+const links = document.querySelectorAll('.header-link');
+
+toggler.addEventListener('click', () => {
+    iconBars.style.display = iconBars.style.display === 'none' ? 'block' : 'none';
+    iconTimes.style.display = iconTimes.style.display === 'none' ? 'block' : 'none';
+})
 
 hamburguer.addEventListener('click', () => {
     hamburguer.classList.toggle('active');
     nav.classList.toggle('active');
 });
 
-toggler.addEventListener('click', () => {
-    iconBars.style.display = iconBars.style.display === 'none' ? 'block' : 'none';
-    iconTimes.style.display = iconTimes.style.display === 'none' ? 'block' : 'none';
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('active');
+        hamburguer.classList.remove('active');
+        iconBars.style.display = 'block';
+        iconTimes.style.display = 'none';
+    });
 });
+
+
 
 function trocarImagem(novaImagem) {
     const img = document.querySelector('.img-accordion');
@@ -418,7 +429,7 @@ $(document).ready(function () {
         autoplayTimeout: 15000,
         autoplayHoverPause: true
     });
-    
+
     var animation = lottie.loadAnimation({
         container: document.getElementById('lottie-animation'),
         renderer: 'svg',
