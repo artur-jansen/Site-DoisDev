@@ -32,6 +32,30 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.voltarTopo{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0px 2px;
+    color: var(--cor-secundaria);
+    font-size: 2em;
+    z-index: 10000;
+}
+
+.voltarTopo:hover{
+    transition: 500ms;
+    transform: scale(1.02);
+    color: #14427e;
+}
+
+.voltarTopo.scrolled {
+    display: block;
+}
+
 /* HEADER */
 /* HEADER */
 /* HEADER */
@@ -299,9 +323,8 @@ section {
 }
 
 .historia-container-icon {
-    margin-left: 0.3em;
-    margin: 10px;
     padding: 12px;
+    margin-left: -0.5em;
 }
 
 .historia-container-escolha-buttons {
