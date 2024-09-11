@@ -442,20 +442,28 @@ section {
     border-radius: 0px 26px 26px 26px;
     padding: 12px;
 }
-
+.pulsate-on-hover:hover,
 .pulsate-on-hover:focus {
     animation: pulseAnimation 1.5s infinite;
+} 
+
+@media (hover: none) {
+    .pulsate-on-hover:active, 
+    .pulsate-on-hover:focus {
+        animation: pulseAnimation 1.5s infinite;
+    
+    }
 }
 
 @keyframes pulseAnimation {
     0% {
-        transform: scale(1);
+        transform: scale(1.02);
     }
     50% {
-        transform: scale(1.05);
+        transform: scale(1.07);
     }
     100% {
-        transform: scale(1);
+        transform: scale(1.01);
     }
 }
 
