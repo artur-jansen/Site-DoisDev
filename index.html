@@ -11,7 +11,7 @@
     <meta name="robots" content="index, follow"/>
     <meta property="og:title" content="Dois Dev - agência de desenvolvimento web" />
     <meta property="og:description" content="Somos uma agência de desenvolvimento web com a missão de fazer seu negócio se expandir ainda mais com nossos sites e estratégias de mercado."/>
-    <meta property="og:image" content="https://www.doisdev.com.br/assets/fundo-azul" />
+    <meta property="og:image" content="./assets/logo-titulo-site.png" />
     <meta property="og:url" content="https://www.doisdev.com.br"/>
     <meta property="og:type" content="website" />
     <title>Dois Dev - Agência de Desenvolvimento Web </title>
@@ -23,21 +23,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="https://www.doisdev.com.br/styles/style.css">
+    <link rel="stylesheet" href="https://www.doisdev.com.br/styles/style.css"> 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQZ4NNP212"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CQZ4NNP212');
+    </script>
 </head>
 
 <body>
     <header class="header">
         <nav class="header-nav">
-            <a href="#"><img loading="lazy" class="header-logo" src="./assets/logo-azul.svg" alt="Logotipo da DoisDev, agência de desenvolvimento web"></a>
+            <a href="#"><img loading="lazy" class="header-logo" src="./assets/logo-azul.svg"
+                    alt="Logotipo da DoisDev, agência de desenvolvimento web"></a>
             <button class="header-hamburguer navbar-toggler" aria-label="Abrir menu de navegação">
                 <i class="fas fa-bars"></i>
                 <i class="fas fa-times" style="display:none;"></i>
             </button>
             <ul class="header-ul">
                 <li><a class="header-link header-link1" href="#historia">Nosso propósito</a></li>
-                <li><a class="header-link header-link2" href="#servicos">Serviços</a></li>
-                <li><a class="header-link header-link3" href="#contato">Contato</a></li>
+                <li><a class="header-link header-link2" href="#tipos">O que fazemos</a></li>
+                <li><a class="header-link header-link3" href="#servicos">Serviços</a></li>
+                <li><a class="header-link header-link4" href="#contato">Contato</a></li>
                 <li class="header-link-icons">
                     <img loading="lazy" class="header-link-icon" id="btn-pt" src="./assets/brasil-icon.png"
                         alt="icone da bandeira do Brasil em forma de circulo para traduzir para português"
@@ -53,14 +64,21 @@
         <button class="voltarTopo" aria-label="Voltar para o topo da página">
             <i class="bi bi-arrow-up-circle"></i>
         </button>
-        
+
         <section class="principal">
             <div class="principal-container-titulo">
-                <img loading="lazy" src="./assets/logo-azul.svg" alt="Logotipo da DoisDev na seção principal, agência de desenvolvimento web" class="principal-logo">
-                <p class="principal-paragrafo">Impulsione seu negócio e <strong class="principal-paragrafo-destaque">aumente seu alcance</strong> com as nossas estratégias minuciosamente desenvolvidas <strong class="principal-paragrafo-destaque">para atingir o seu cliente</strong> e transformar cliques em <strong class="principal-paragrafo-destaque">vendas <i class="bi bi-graph-up-arrow principal-paragrafo-icon"></i></strong></p>
+                <img loading="lazy" src="./assets/logo-azul.svg"
+                    alt="Logotipo da DoisDev na seção principal, agência de desenvolvimento web" class="principal-logo">
+                <p class="principal-paragrafo">Impulsione seu negócio e <strong
+                        class="principal-paragrafo-destaque">aumente seu alcance</strong> com as nossas estratégias
+                    minuciosamente desenvolvidas <strong class="principal-paragrafo-destaque">para atingir o seu
+                        cliente</strong> e transformar cliques em <strong class="principal-paragrafo-destaque">vendas <i
+                            class="bi bi-graph-up-arrow principal-paragrafo-icon"></i></strong></p>
             </div>
             <div class="principal-container-sabermais">
-                <button class="principal-sabermais" aria-label="Navegar para próxima seção do site"><a href="#historia" class="principal-sabermais-link"><span> QUER SABER MAIS...</span><i class="bi bi-arrow-down-circle-fill icon-card-principal"></i></a></button>
+                <button class="principal-sabermais" aria-label="Navegar para próxima seção do site"><a href="#historia"
+                        class="principal-sabermais-link"><span> QUER SABER MAIS...</span><i
+                            class="bi bi-arrow-down-circle-fill icon-card-principal"></i></a></button>
             </div>
         </section>
         <section id="historia">
@@ -91,14 +109,24 @@
             </div>
 
             <div class="historia-container-escolha" id="escolha">
-                <h2 class="historia-container-titulo">O QUE NOS TORNA A<strong class="historia-container-titulo-strong">ESCOLHA CERTA</strong>PARA O SEU NEGÓCIO <button class="border-0 bg-transparent historia-container-icon" aria-label="Direcionar para cards de motivos de escolha"><a href="#escolha-container" aria-label="Ir para a seção de escolha"><i class="bi bi-arrow-down-circle-fill"></i></a></button></h2>
+                <h2 class="historia-container-titulo">O QUE NOS TORNA A<strong
+                        class="historia-container-titulo-strong">ESCOLHA CERTA</strong>PARA O SEU NEGÓCIO <button
+                        class="border-0 bg-transparent historia-container-icon"
+                        aria-label="Direcionar para cards de motivos de escolha"><a href="#escolha-container"
+                            aria-label="Ir para a seção de escolha"><i
+                                class="bi bi-arrow-down-circle-fill"></i></a></button></h2>
                 <div class="historia-container-escolha-buttons">
-                    <button class="historia-container-escolha-button cor-botao-escolha btn1 btnPerformance pulsate-on-hover" aria-label="Olhar cards de Performance" onclick="clickPerformance()">Performance</button>
-                    <button class="historia-container-escolha-button btn2 btnAlcance pulsate-on-hover" aria-label="Olhar cards de Alcance" onclick="clickAlcance()">Alcance</button>
-                    <button class="historia-container-escolha-button btn3 btnQualidade pulsate-on-hover" aria-label="Olhar cards de Qualidade" onclick="clickQualidade()">Qualidade</button>
+                    <button
+                        class="historia-container-escolha-button cor-botao-escolha btn1 btnPerformance pulsate-on-hover"
+                        aria-label="Olhar cards de Performance" onclick="clickPerformance()">Performance</button>
+                    <button class="historia-container-escolha-button btn2 btnAlcance pulsate-on-hover"
+                        aria-label="Olhar cards de Alcance" onclick="clickAlcance()">Alcance</button>
+                    <button class="historia-container-escolha-button btn3 btnQualidade pulsate-on-hover"
+                        aria-label="Olhar cards de Qualidade" onclick="clickQualidade()">Qualidade</button>
                 </div>
                 <div class="historia-cards row mx-0 g-2" id="escolha-container">
-                    <div class="col-12 col-md-4 historia-card-1" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="700">
+                    <div class="col-12 col-md-4 historia-card-1" data-aos="fade-right" data-aos-offset="200"
+                        data-aos-easing="ease-in-sine" data-aos-duration="700">
                         <div class="historia-card-item">
                             <div class="historia-card-header">
                                 <i class="bi bi-coin"></i>
@@ -110,7 +138,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 historia-card-2" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="700">
+                    <div class="col-12 col-md-4 historia-card-2" data-aos="fade-right" data-aos-offset="200"
+                        data-aos-easing="ease-in-sine" data-aos-duration="700">
                         <div class="historia-card-item">
                             <div class="historia-card-header">
                                 <i class="bi bi-coin"></i>
@@ -122,7 +151,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 historia-card-3" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="700">
+                    <div class="col-12 col-md-4 historia-card-3" data-aos="fade-right" data-aos-offset="200"
+                        data-aos-easing="ease-in-sine" data-aos-duration="700">
                         <div class="historia-card-item">
                             <div class="historia-card-header">
                                 <i class="bi bi-coin"></i>
@@ -136,7 +166,8 @@
                         </div>
                     </div>
                     <div class="historia-card-contato">
-                        <button class="historia-card-botao-contato" aria-label="Ir para seção de formas de contatos da empresa">
+                        <button class="historia-card-botao-contato"
+                            aria-label="Ir para seção de formas de contatos da empresa">
                             <a href="#contato" class="historia-card-botao-contato-link">
                                 <span class="historia-card-botao-contato-link-texto">ENTRE EM CONTATO</span>
                                 <i class="bi bi-chat-dots icon-card-contato"></i>
@@ -146,14 +177,64 @@
                 </div>
             </div>
         </section>
+        <section id="tipos">
+            <h1 class="tipos-titulo">NOSSO PROPÓSITO</h1>
+            <div class="container-tipos">
+                <div class="container-tipo">
+                    <h2 class="container-tipo-titulo">LANDING PAGES</h2>
+                    <img class="container-tipo-img" src="./assets/landing-page.png" alt="Imagem que representa o rascunho de uma landing page">
+                    <p class="container-tipo-paragrafo">
+                        Uma landing page é uma página única que apresenta um serviço ou negócio de forma direta, ajudando você a conhecê-lo rapidamente e incentivando ações como entrar em contato ou experimentar o serviço. 
+                    </p>
+                </div>
+                <div class="container-tipo">
+                    <h2 class="container-tipo-titulo">SITES CORPORATIVOS</h2>
+                    <img class="container-tipo-img" src="./assets/corporativo.png" alt="Imagem que representa o rascunho de um site corporativo">
+                    <p class="container-tipo-paragrafo">
+                        Um site corporativo é um estilo de site que representa oficialmente uma empresa, oferecendo informações sobre seus produtos, serviços, valores e equipe. Ele serve como um ponto de contato para clientes e parceiros, ajudando a construir credibilidade e facilitar a comunicação.
+                    </p>
+                </div>
+                <div class="container-tipo">
+                    <h2 class="container-tipo-titulo">E-COMMERCE</h2>
+                    <img class="container-tipo-img" src="./assets/e-commerce.png" alt="Imagem que representa o rascunho de um e-commerce">
+                    <p class="container-tipo-paragrafo">
+                        Um e-commerce é uma loja online onde você pode comprar produtos ou serviços diretamente pela internet. Ele oferece uma experiência de compra conveniente, permitindo que você explore, escolha e pague por itens sem sair de casa, com opções de entrega diretamente na sua porta.
+                    </p>
+                </div>
+                <div class="container-tipo">
+                    <h2 class="container-tipo-titulo">SITES PARA CAMPANHAS</h2>
+                    <img class="container-tipo-img" src="./assets/campanhas.png" alt="Imagem que representa o rascunho de um site para campanhas">
+                    <p class="container-tipo-paragrafo">
+                        Um site para campanhas é uma página dedicada a promover uma iniciativa específica, como uma campanha de marketing ou arrecadação de fundos. Ele é projetado para engajar visitantes, informar sobre a causa ou produto, e incentivar ações como doações, assinaturas ou compartilhamentos.
+                    </p>
+                </div>
+            </div>
+        </section>
         <section id="servicos">
             <div class="servico-container container">
                 <h3 class="servicos-titulo">Nossos serviços</h3>
                 <div class="servicos-container">
                     <div class="owl-carousel">
-                        <div class="item img-card-criacao"><img loading="lazy" class="img-servicos" src="./assets/criacao-img.png" alt="Imagem de card com o titulo 'Criação' e texto descrevendo"></div>
-                        <div class="item img-card-manutencao"><img loading="lazy" class="img-servicos" src="./assets/manutencao-img.png" alt="Imagem de card com o titulo 'Manutenção' e texto descrevendo"></div>
-                        <div class="item img-card-suporte"><img loading="lazy" class="img-servicos" src="./assets/suporte-img.png" alt="Imagem de card com o titulo 'Suporte' e texto descrevendo"></div>
+                        <div class="item img-card-criacao"><img loading="lazy" class="img-servicos"
+                                src="./assets/criacao-img.png"
+                                alt="Imagem de card com o titulo 'Criação' e texto descrevendo">
+                        </div>
+                        <div class="item img-card-manutencao"><img loading="lazy" class="img-servicos"
+                                src="./assets/manutencao-img.png"
+                                alt="Imagem de card com o titulo 'Manutenção' e texto descrevendo">
+                        </div>
+                        <div class="item img-card-suporte"><img loading="lazy" class="img-servicos"
+                                src="./assets/suporte-img.png"
+                                alt="Imagem de card com o titulo 'Suporte' e texto descrevendo">
+                        </div>
+                        <div class="item img-card-seo"><img loading="lazy" class="img-servicos"
+                                src="./assets/seo-img.png"
+                                alt="Imagem de card com o titulo 'SEO' e texto descrevendo">
+                        </div>
+                        <div class="item img-card-responsividade"><img loading="lazy" class="img-servicos"
+                                src="./assets/responsividade-img.png"
+                                alt="Imagem de card com o titulo 'Responsividade' e texto descrevendo">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -179,14 +260,16 @@
                             <p class="m-0 p-1">doisdev7@gmail.com</p>
                         </a>
 
-                        <a href="https://wa.me/5575991504950?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os" target="_blank" class="topico-contato">
+                        <a href="https://wa.me/5575991504950?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os"
+                            target="_blank" class="topico-contato">
                             <div class="icon-contato">
                                 <i class="bi bi-whatsapp"></i>
                             </div>
                             <p class="m-0 p-1">+55 75 99150-4950</p>
                         </a>
 
-                        <a href="https://wa.me/5575991436121?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os" target="_blank" class="topico-contato">
+                        <a href="https://wa.me/5575991436121?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os"
+                            target="_blank" class="topico-contato">
                             <div class="icon-contato">
                                 <i class="bi bi-whatsapp"></i>
                             </div>
@@ -208,10 +291,13 @@
         <i class="bi bi-c-circle mx-1"></i>
         <p class="texto-footer">2024 DoisDev. Todos os direitos reservados.</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
-    <script src="https://unpkg.com/i18next-browser-languagedetector/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
+    <script
+        src="https://unpkg.com/i18next-browser-languagedetector/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"></script>
@@ -224,7 +310,6 @@
         }
     </script>
     <script src="https://www.doisdev.com.br.br/script.js" async></script>
-    <script src="https://www.doisdev.com.br.br/js/main.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

@@ -77,8 +77,9 @@ const resources = {
     en: {
         translation: {
             "headerLink1": "Our purpose",
-            "headerLink2": "Services",
-            "headerLink3": "Contact",
+            "headerlink2": "What we do",
+            "headerLink3": "Services",
+            "headerLink4": "Contact",
             "paragrafoPrincipal": "Boost your business and <strong class=\"principal-paragrafo-destaque\">increase your reach</strong> with our carefully developed strategies <strong class=\"principal-paragrafo-destaque\">to reach your customer</strong> and turn clicks into <strong class=\"principal-paragrafo-destaque\">sales <i class=\"bi bi-graph-up-arrow principal-paragrafo-icon\"></i></strong>",
             "textoSaberMais": "<button class=\"principal-sabermais\" href=\"#historia\"><a href=\"#historia\" class=\"principal-sabermais-link\"><span>WANT TO KNOW MORE...</span></a><i class=\"bi bi-arrow-down-circle-fill icon-card-principal \"></i></button>",
             "tituloProposito": "OUR PURPOSE",
@@ -117,8 +118,9 @@ const resources = {
     pt: {
         translation: {
             "headerLink1": "Nosso propósito",
-            "headerLink2": "Serviços",
-            "headerLink3": "Contato",
+            "headerLink2": "O que fazemos",
+            "headerLink3": "Serviços",
+            "headerLink4": "Contato",
             "paragrafoPrincipal": "Impulsione seu negócio e <strong class=\"principal-paragrafo-destaque\">aumente seu alcance</strong> com as nossas estratégias minuciosamente desenvolvidas <strong class=\"principal-paragrafo-destaque\">para atingir o seu cliente</strong> e transformar cliques em <strong class=\"principal-paragrafo-destaque\">vendas <i class=\"bi bi-graph-up-arrow principal-paragrafo-icon\"></i></strong>",
             "textoSaberMais": "<button class=\"principal-sabermais\" href=\"#historia\"><a href=\"#historia\" class=\"principal-sabermais-link\"><span>QUER SABER MAIS...</span></a><i class=\"bi bi-arrow-down-circle-fill icon-card-principal \"></i></button>",
             "tituloProposito": "NOSSO PROPÓSITO",
@@ -406,17 +408,23 @@ function clickQualidade() {
 const cardCriacao = document.querySelector('.img-card-criacao');
 const cardManutencao = document.querySelector('.img-card-manutencao');
 const cardSuporte = document.querySelector('.img-card-suporte');
+const cardSeo = document.querySelector('.img-card-seo');
+const cardResponsividade = document.querySelector('.img-card-responsividade');
 
 function traduzEn() {
     cardCriacao.innerHTML = '<img class="img-servicos" src="./assets/criacao-img-ingles.png" alt="Card image with the title Creation and text describing it">'
     cardManutencao.innerHTML = '<img class="img-servicos" src="./assets/manutencao-img-ingles.png" alt="Card image with the title Maintenance and text describing it">'
     cardSuporte.innerHTML = '<img class="img-servicos" src="./assets/suporte-img-ingles.png" alt="Card image with the title Support and text describing it">'
+    cardSeo.innerHTML = '<img class="img-seo" src="./assets/seo-img-ingles.png" alt="Card image with the title Support and text describing it">'
+    cardResponsividade.innerHTML = '<img class="img-responsividade" src="./assets/responsividade-img-ingles.png" alt="Card image with the title Support and text describing it">'
 }
 
 function traduzPt() {
     cardCriacao.innerHTML = '<img class="img-servicos" src="./assets/criacao-img.png" alt="Imagem de card com o titulo Criação e texto descrevendo">'
     cardManutencao.innerHTML = '<img class="img-servicos" src="./assets/manutencao-img.png" alt="Imagem de card com o titulo Manutenção e texto descrevendo">'
     cardSuporte.innerHTML = '<img class="img-servicos" src="./assets/suporte-img.png" alt="Imagem de card com o titulo Suporte e texto descrevendo">'
+    cardSeo.innerHTML = '<img class="img-seo" src="./assets/seo-img.png" alt="Imagem de card com o titulo Suporte e texto descrevendo">'
+    cardResponsividade.innerHTML = '<img class="img-responsividade" src="./assets/responsividade-img.png" alt="Imagem de card com o titulo Suporte e texto descrevendo">'
 }
 
 $(document).ready(function () {
@@ -425,9 +433,7 @@ $(document).ready(function () {
         loop: false,
         margin: 10,
         nav: true,
-        autoplay: true,
-        autoplayTimeout: 15000,
-        autoplayHoverPause: true
+        autoplay: false
     });
 
     var animation = lottie.loadAnimation({
