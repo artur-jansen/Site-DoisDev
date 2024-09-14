@@ -33,23 +33,21 @@ body {
 }
 
 .voltarTopo{
+    background-color: transparent;
+    color: var(--cor-destaque);
+    border: none;
+    font-size: 2em;
     display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 0px 2px;
-    color: var(--cor-secundaria);
-    font-size: 2em;
     z-index: 10000;
 }
 
 .voltarTopo:hover{
     transition: 500ms;
     transform: scale(1.02);
-    color: #14427e;
+    color: #ffae2c;
 }
 
 .voltarTopo.scrolled {
@@ -511,6 +509,7 @@ section {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     padding-top: 0.5em;
+    text-align: center;
 }
 
 .container-tipo-img{
@@ -518,13 +517,41 @@ section {
     height: 500px;
 }
 
-.container-tipo-paragrafo{
-    background-color: var(--cor-secundaria);
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.33);
-    color: #fff;
-    border-radius: 24px;
+.container-tipo-button{
+    background-color: #ffffff;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 12px;
     width: 700px;
-    padding: 12px;
+    height: 100%;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.container-tipo-button:hover{
+    background-color: var(--cor-secundaria);
+    color: #ffffff;
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.container-tipo-button-modal-titulo{
+    color: var(--cor-secundaria);
+}
+
+.container-tipo-button-modal-fechar{
+    background-color: var(--cor-secundaria);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.container-tipo-button-modal-fechar:hover{
+    transition: 1s;
+    background-color: #ffffff;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-secundaria);
 }
 
 /* SERVICOS */
@@ -814,7 +841,7 @@ footer p {
         height: 300px;
     }
 
-    .container-tipo-paragrafo{
+    .container-tipo-button{
         width: 500px;
     }
 
@@ -891,8 +918,9 @@ footer p {
         height: 200px;
     }
 
-    .container-tipo-paragrafo{
+    .container-tipo-button{
         width: 300px;
+        font-size: 1em;
     }
 
     /* SERVICOS */

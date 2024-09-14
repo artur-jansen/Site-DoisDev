@@ -77,7 +77,7 @@ const resources = {
     en: {
         translation: {
             "headerLink1": "Our purpose",
-            "headerlink2": "What we do",
+            "headerLink2": "What we do",
             "headerLink3": "Services",
             "headerLink4": "Contact",
             "paragrafoPrincipal": "Boost your business and <strong class=\"principal-paragrafo-destaque\">increase your reach</strong> with our carefully developed strategies <strong class=\"principal-paragrafo-destaque\">to reach your customer</strong> and turn clicks into <strong class=\"principal-paragrafo-destaque\">sales <i class=\"bi bi-graph-up-arrow principal-paragrafo-icon\"></i></strong>",
@@ -87,7 +87,7 @@ const resources = {
             "tituloEscolhaCerta": "<h4 class=\"historia-container-titulo\">WHAT MAKES US<strong class=\"historia-container-titulo-strong\">THE RIGHT CHOICE</strong>FOR YOUR BUSINESS <button class=\"border-0 bg-transparent historia-container-icon\"><a href=\"#escolha-container\"><i class=\"bi bi-arrow-down-circle-fill\"></i></a></button></h4>",
             "performanceBtn": "Performance",
             "performance_title": "SPEED AND PERFORMANCE",
-            "performance_desc": "With our team, we optimize the code and make your website smooth as soap, accessible on any device.",
+            "performance_desc": "With our team from the best web development agency in Feira de Santana, we optimize the code and make your site as smooth as soap, accessible on any device.",
             "results_title": "FOCUS ON RESULTS",
             "results_desc": "DoisDev has the priority and capability to deliver results that truly make a difference for your business, turning simple visitors into potential customers.",
             "noStress_title": "NO STRESS",
@@ -106,6 +106,25 @@ const resources = {
             "qualidade_desc2": "Just as we only work with quality businesses, your site needs to maintain this standard, which we guarantee, bringing new clients impressed with your service conveyed through the screen of their devices.",
             "qualidade_title3": "SEEKING PERFECTION",
             "qualidade_desc3": "Our goal is to create your site perfectly, combining your ideas with ours and transforming them into an amazing and high-quality site, pleasing your potential client.",
+            "tiposTitulo": "WHAT WE DO",
+            "tituloLanding": "LANDING PAGES",
+            "tituloCorporativo": "CORPORATE WEBSITES",
+            "tituloECommerce": "E-COMMERCE",
+            "tituloCampanhas": "CAMPAIGN WEBSITES",
+            "paragrafoLanding": "A landing page is a single page that presents a service or business in a direct way, helping you to get to know it quickly and encouraging actions such as getting in touch or trying out the service.",
+            "tituloModalLanding": "LANDING PAGES",
+            "tituloModalCorporativo": "CORPORATE WEBSITES",
+            "tituloModalECommerce": "E-COMMERCE",
+            "tituloModalCampanhas": "CAMPAIGN WEBSITES",
+            "paragrafoLanding": "A landing page is a single page that presents a service or business in a direct way, helping you to get to know it quickly and encouraging actions such as getting in touch or trying out the service.",
+            "paragrafoCorporativo": "A corporate website is a style of website that officially represents a company, offering information about its products, services, values and team. It serves as a point of contact for clients and partners, helping to build credibility and facilitate communication.",
+            "paragrafoECommerce": "An e-commerce is an online store where you can buy products or services directly over the internet. It offers a convenient shopping experience, allowing you to explore, choose and pay for items without leaving your home, with delivery options directly to your door.",
+            "paragrafoCampanhas": "A campaign website is a page dedicated to promoting a specific initiative, such as a marketing or fundraising campaign. It is designed to engage visitors, inform them about the cause or product, and encourage actions such as donations, subscriptions or shares.",
+            "tipoButtonSaibaMais": "Read more",
+            "tipoButtonFecharLanding": "Close window",
+            "tipoButtonFecharCorporativo": "Close window",
+            "tipoButtonFecharECommerce": "Close window",
+            "tipoButtonFecharCampanhas": "Close window",
             "botaoEntreContato": "CONTACT US",
             "tituloServicos": "OUR SERVICES",
             "contatoTitulo": "CONTACT",
@@ -128,7 +147,7 @@ const resources = {
             "tituloEscolhaCerta": "<h4 class=\"historia-container-titulo\">O QUE NOS TORNA A<strong class=\"historia-container-titulo-strong\">ESCOLHA CERTA</strong>PARA O SEU NEGÓCIO <button class=\"border-0 bg-transparent historia-container-icon\"><a href=\"#escolha-container\"><i class=\"bi bi-arrow-down-circle-fill\"></i></a></button></h4>",
             "performanceBtn": "Performance",
             "performance_title": "VELOCIDADE E PERFORMANCE",
-            "performance_desc": "Com a nossa equipe, otimizamos o código e deixamos seu site liso igual sabonete, acessível em qualquer dispositivo.",
+            "performance_desc": "Com a nossa equipe da melhor agência de desenvolvimento web de Feira de Santana, otimizamos o código e deixamos seu site liso igual sabonete, acessível em qualquer dispositivo.",
             "results_title": "FOCO NOS RESULTADOS",
             "results_desc": "A DoisDev tem a prioridade e capacidade de entregar resultados que realmente fazem a diferença para o seu negócio, transformando simples visitantes em potenciais clientes.",
             "noStress_title": "SEM ESTRESSE",
@@ -147,6 +166,24 @@ const resources = {
             "qualidade_desc2": "Assim como só trabalhamos com negócios de qualidade, o seu site precisa manter esse padrão e conosco isso é garantido, trazendo novos clientes impressionados com o seu serviço transmitido pela tela dos dispositivos.",
             "qualidade_title3": "BUSCANDO A PERFEIÇÃO",
             "qualidade_desc3": "Temos o objetivo de criar seu site de forma perfeita, unindo suas ideias às nossas e transformando-as em um site incrível e de extrema qualidade, agradando seu cliente em potencial.",
+            "tiposTitulo": "O QUE FAZEMOS",
+            "tituloLanding": "LANDING PAGES",
+            "tituloCorporativo": "SITES CORPORATIVOS",
+            "tituloECommerce": "E-COMMERCE",
+            "tituloCampanhas": "SITES PARA CAMPANHAS",
+            "tituloModalLanding": "LANDING PAGES",
+            "tituloModalCorporativo": "SITES CORPORATIVOS",
+            "tituloModalECommerce": "E-COMMERCE",
+            "tituloModalCampanhas": "SITES PARA CAMPANHAS",
+            "paragrafoLanding": "Uma landing page é uma página única que apresenta um serviço ou negócio de forma direta, ajudando você a conhecê-lo rapidamente e incentivando ações como entrar em contato ou experimentar o serviço.",
+            "paragrafoCorporativo": "Um site corporativo é um estilo de site que representa oficialmente uma empresa, oferecendo informações sobre seus produtos, serviços, valores e equipe. Ele serve como um ponto de contato para clientes e parceiros, ajudando a construir credibilidade e facilitar a comunicação.",
+            "paragrafoECommerce": "Um e-commerce é uma loja online onde você pode comprar produtos ou serviços diretamente pela internet. Ele oferece uma experiência de compra conveniente, permitindo que você explore, escolha e pague por itens sem sair de casa, com opções de entrega diretamente na sua porta.",
+            "paragrafoCampanhas": "Um site para campanhas é uma página dedicada a promover uma iniciativa específica, como uma campanha de marketing ou arrecadação de fundos. Ele é projetado para engajar visitantes, informar sobre a causa ou produto, e incentivar ações como doações, assinaturas ou compartilhamentos.",
+            "tipoButtonSaibaMais": "Saiba Mais",
+            "tipoButtonFecharLanding": "Fechar janela",
+            "tipoButtonFecharCorporativo": "Fechar janela",
+            "tipoButtonFecharECommerce": "Fechar janela",
+            "tipoButtonFecharCampanhas": "Fechar janela",
             "botaoEntreContato": "ENTRE EM CONTATO",
             "tituloServicos": "NOSSOS SERVIÇOS",
             "contatoTitulo": "CONTATO",
@@ -183,6 +220,9 @@ function updateContent() {
 
     const headerLink3 = document.querySelector('.header-link3');
     headerLink3.innerHTML = i18next.t('headerLink3');
+
+    const headerLink4 = document.querySelector('.header-link4');
+    headerLink4.innerHTML = i18next.t('headerLink4');
 
     const paragrafoPrincipal = document.querySelector('.principal-paragrafo');
     paragrafoPrincipal.innerHTML = i18next.t('paragrafoPrincipal');
@@ -228,6 +268,60 @@ function updateContent() {
 
     const botaoEntreContato = document.querySelector('.historia-card-botao-contato-link-texto');
     botaoEntreContato.innerHTML = i18next.t('botaoEntreContato');
+
+    const tiposTitulo = document.querySelector('.tipos-titulo');
+    tiposTitulo.innerHTML = i18next.t('tiposTitulo');
+
+    const tituloLanding = document.querySelector('.titulo-landing');
+    tituloLanding.innerHTML = i18next.t('tituloLanding');
+
+    const tituloCorporativo = document.querySelector('.titulo-corporativo');
+    tituloCorporativo.innerHTML = i18next.t('tituloCorporativo');
+
+    const tituloECommerce = document.querySelector('.titulo-e-commerce');
+    tituloECommerce.innerHTML = i18next.t('tituloECommerce');
+
+    const tituloCampanhas = document.querySelector('.titulo-campanhas');
+    tituloCampanhas.innerHTML = i18next.t('tituloCampanhas');
+    
+    const tituloModalLanding = document.querySelector('.titulo-landing-modal');
+    tituloModalLanding.innerHTML = i18next.t('tituloModalLanding');
+
+    const tituloModalCorporativo = document.querySelector('.titulo-corporativo-modal');
+    tituloModalCorporativo.innerHTML = i18next.t('tituloModalCorporativo');
+
+    const tituloModalECommerce = document.querySelector('.titulo-e-commerce-modal');
+    tituloModalECommerce.innerHTML = i18next.t('tituloModalECommerce');
+
+    const tituloModalCampanhas = document.querySelector('.titulo-campanhas-modal');
+    tituloModalCampanhas.innerHTML = i18next.t('tituloModalCampanhas');
+
+    const paragrafoLanding = document.querySelector('.paragrafo-landing');
+    paragrafoLanding.innerHTML = i18next.t('paragrafoLanding');
+
+    const paragrafoCorporativo = document.querySelector('.paragrafo-corporativo');
+    paragrafoCorporativo.innerHTML = i18next.t('paragrafoCorporativo');
+
+    const paragrafoECommerce = document.querySelector('.paragrafo-e-commerce');
+    paragrafoECommerce.innerHTML = i18next.t('paragrafoECommerce');
+
+    const paragrafoCampanhas = document.querySelector('.paragrafo-campanhas');
+    paragrafoCampanhas.innerHTML = i18next.t('paragrafoCampanhas');
+
+    const tipoButtonSaibaMais = document.querySelector('.container-tipo-button');
+    tipoButtonSaibaMais.innerHTML = i18next.t('tipoButtonSaibaMais');
+
+    const tipoButtonFecharLanding = document.querySelector('.botaoFecharLanding');
+    tipoButtonFecharLanding.innerHTML = i18next.t('tipoButtonFecharLanding');
+
+    const tipoButtonFecharCorporativo = document.querySelector('.botaoFecharCorporativo');
+    tipoButtonFecharCorporativo.innerHTML = i18next.t('tipoButtonFecharCorporativo');
+
+    const tipoButtonFecharECommerce = document.querySelector('.botaoFecharECommerce');
+    tipoButtonFecharECommerce.innerHTML = i18next.t('tipoButtonFecharECommerce');
+
+    const tipoButtonFecharCampanhas = document.querySelector('.botaoFecharCampanhas');
+    tipoButtonFecharCampanhas.innerHTML = i18next.t('tipoButtonFecharCampanhas');
 
     const tituloServicos = document.querySelector('.servicos-titulo');
     tituloServicos.innerHTML = i18next.t('tituloServicos');
@@ -430,7 +524,7 @@ function traduzPt() {
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         items: 1,
-        loop: false,
+        loop: true,
         margin: 10,
         nav: true,
         autoplay: false
