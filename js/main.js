@@ -120,7 +120,10 @@ const resources = {
             "paragrafoCorporativo": "A corporate website is a style of website that officially represents a company, offering information about its products, services, values and team. It serves as a point of contact for clients and partners, helping to build credibility and facilitate communication.",
             "paragrafoECommerce": "An e-commerce is an online store where you can buy products or services directly over the internet. It offers a convenient shopping experience, allowing you to explore, choose and pay for items without leaving your home, with delivery options directly to your door.",
             "paragrafoCampanhas": "A campaign website is a page dedicated to promoting a specific initiative, such as a marketing or fundraising campaign. It is designed to engage visitors, inform them about the cause or product, and encourage actions such as donations, subscriptions or shares.",
-            "tipoButtonSaibaMais": "Read more",
+            "tipoButtonSaibaMaisLanding": "Read more",
+            "tipoButtonSaibaMaisCorporativo": "Read more",
+            "tipoButtonSaibaMaisECommerce": "Read more",
+            "tipoButtonSaibaMaisCampanha": "Read more",
             "tipoButtonFecharLanding": "Close window",
             "tipoButtonFecharCorporativo": "Close window",
             "tipoButtonFecharECommerce": "Close window",
@@ -179,7 +182,10 @@ const resources = {
             "paragrafoCorporativo": "Um site corporativo é um estilo de site que representa oficialmente uma empresa, oferecendo informações sobre seus produtos, serviços, valores e equipe. Ele serve como um ponto de contato para clientes e parceiros, ajudando a construir credibilidade e facilitar a comunicação.",
             "paragrafoECommerce": "Um e-commerce é uma loja online onde você pode comprar produtos ou serviços diretamente pela internet. Ele oferece uma experiência de compra conveniente, permitindo que você explore, escolha e pague por itens sem sair de casa, com opções de entrega diretamente na sua porta.",
             "paragrafoCampanhas": "Um site para campanhas é uma página dedicada a promover uma iniciativa específica, como uma campanha de marketing ou arrecadação de fundos. Ele é projetado para engajar visitantes, informar sobre a causa ou produto, e incentivar ações como doações, assinaturas ou compartilhamentos.",
-            "tipoButtonSaibaMais": "Saiba Mais",
+            "tipoButtonSaibaMaisLanding": "Saiba Mais",
+            "tipoButtonSaibaMaisCorporativo": "Saiba Mais",
+            "tipoButtonSaibaMaisECommerce": "Saiba Mais",
+            "tipoButtonSaibaMaisCampanha": "Saiba Mais",
             "tipoButtonFecharLanding": "Fechar janela",
             "tipoButtonFecharCorporativo": "Fechar janela",
             "tipoButtonFecharECommerce": "Fechar janela",
@@ -308,8 +314,17 @@ function updateContent() {
     const paragrafoCampanhas = document.querySelector('.paragrafo-campanhas');
     paragrafoCampanhas.innerHTML = i18next.t('paragrafoCampanhas');
 
-    const tipoButtonSaibaMais = document.querySelector('.container-tipo-button');
-    tipoButtonSaibaMais.innerHTML = i18next.t('tipoButtonSaibaMais');
+    const tipoButtonSaibaMaisLanding = document.querySelector('.container-tipo-button-landing');
+    tipoButtonSaibaMaisLanding.innerHTML = i18next.t('tipoButtonSaibaMaisLanding');
+    
+    const tipoButtonSaibaMaisCorporativo = document.querySelector('.container-tipo-button-corporativo');
+    tipoButtonSaibaMaisCorporativo.innerHTML = i18next.t('tipoButtonSaibaMaisCorporativo');
+    
+    const tipoButtonSaibaMaisECommerce = document.querySelector('.container-tipo-button-e-commerce');
+    tipoButtonSaibaMaisECommerce.innerHTML = i18next.t('tipoButtonSaibaMaisECommerce');
+    
+    const tipoButtonSaibaMaisCampanha = document.querySelector('.container-tipo-button-campanha');
+    tipoButtonSaibaMaisCampanha.innerHTML = i18next.t('tipoButtonSaibaMaisCampanha');
 
     const tipoButtonFecharLanding = document.querySelector('.botaoFecharLanding');
     tipoButtonFecharLanding.innerHTML = i18next.t('tipoButtonFecharLanding');
