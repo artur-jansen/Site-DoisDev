@@ -161,7 +161,7 @@ section {
 /* PRINCIPAL */
 
 .principal-container-titulo {
-    background-image: url(/assets/fundo-hero-desktop.png);
+    background-image: url(./../assets/fundo-hero-desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
