@@ -80,7 +80,7 @@ const resources = {
             "headerLink2": "What we do",
             "headerLink3": "Services",
             "headerLink4": "Contact",
-            "paragrafoPrincipal": "Boost your business and <strong class=\"principal-paragrafo-destaque\">increase your reach</strong> with our carefully developed strategies <strong class=\"principal-paragrafo-destaque\">to reach your customer</strong> and turn clicks into <strong class=\"principal-paragrafo-destaque\">sales <i class=\"bi bi-graph-up-arrow principal-paragrafo-icon\"></i></strong>",
+            "paragrafoPrincipal": "Boost your business and with our carefully developed strategies to reach your customer and turn clicks into sales.",
             "textoSaberMais": "<button class=\"principal-sabermais\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSd1t9kSHXyuDuIIo45l06cWc2uIBfJJNyYwLB20L8vMkGEp5Q/viewform?usp=sharing\"><a href=\"https://docs.google.com/forms/d/e/1FAIpQLSd1t9kSHXyuDuIIo45l06cWc2uIBfJJNyYwLB20L8vMkGEp5Q/viewform?usp=sharing\" class=\"principal-sabermais-link\"><span>MAKE YOUR BUDGET</span></a><i class=\"bi bi-pencil-square icon-card-principal \"></i></button>",
             "tituloProposito": "OUR PURPOSE",
             "paragrafoProposito": "DoisDev was founded to help companies and service providers use technology to their advantage. We focus on creating websites that boost and strengthen your business, providing greater visibility and credibility. A well-designed website attracts more clients and makes life easier for both the client and the company or service provider. In today's scenario, where technology plays a central role in our lives, we are ready to update your business and connect it to the modern world.",
@@ -143,8 +143,8 @@ const resources = {
             "headerLink2": "O que fazemos",
             "headerLink3": "Serviços",
             "headerLink4": "Contato",
-            "paragrafoPrincipal": "Impulsione seu negócio e <strong class=\"principal-paragrafo-destaque\">aumente seu alcance</strong> com as nossas estratégias minuciosamente desenvolvidas <strong class=\"principal-paragrafo-destaque\">para atingir o seu cliente</strong> e transformar cliques em <strong class=\"principal-paragrafo-destaque\">vendas <i class=\"bi bi-graph-up-arrow principal-paragrafo-icon\"></i></strong>",
-            "textoSaberMais": "<button class=\"principal-sabermais\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSd1t9kSHXyuDuIIo45l06cWc2uIBfJJNyYwLB20L8vMkGEp5Q/viewform?usp=sharing\"><a href=\"https://docs.google.com/forms/d/e/1FAIpQLSd1t9kSHXyuDuIIo45l06cWc2uIBfJJNyYwLB20L8vMkGEp5Q/viewform?usp=sharing\" class=\"principal-sabermais-link\"><span>FAÇA UM ORÇAMENTO</span></a><i class=\"bi bi-pencil-square icon-card-principal \"></i></button>",
+            "paragrafoPrincipal": "Impulsione seu negócio e aumente seu alcance com as nossas estratégias minuciosamente desenvolvidas para atingir o seu cliente e transformar cliques em vendas.",
+            "textoSaberMais": "<button class=\"principal-sabermais\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSd1t9kSHXyuDuIIo45l06cWc2uIBfJJNyYwLB20L8vMkGEp5Q/viewform?usp=sharing\"><a href=\"https://docs.google.com/forms/d/e/1FAIpQLSd1t9kSHXyuDuIIo45l06cWc2uIBfJJNyYwLB20L8vMkGEp5Q/viewform?usp=sharing\" class=\"principal-sabermais-link\"><span>FAÇA SEU ORÇAMENTO</span></a><i class=\"bi bi-pencil-square icon-card-principal \"></i></button>",
             "tituloProposito": "NOSSO PROPÓSITO",
             "paragrafoProposito": "A DoisDev surgiu com o propósito de ajudar empresas e prestadores de serviços a aproveitarem a tecnologia a seu favor. Focamos na criação de sites que impulsionam e fortalecem o seu negócio, proporcionando maior visibilidade e credibilidade. Um site bem elaborado atrai mais clientes e facilita a vida tanto do cliente quanto da empresa ou prestador de serviços. No cenário atual, em que a tecnologia desempenha um papel central em nossas vidas, estamos prontos para atualizar o seu negócio e conectá-lo ao mundo moderno.",
             "tituloEscolhaCerta": "<h4 class=\"historia-container-titulo\">O QUE NOS TORNA A<strong class=\"historia-container-titulo-strong\">ESCOLHA CERTA</strong>PARA O SEU NEGÓCIO <button class=\"border-0 bg-transparent historia-container-icon\"><a href=\"#escolha-container\"><i class=\"bi bi-arrow-down-circle-fill\"></i></a></button></h4>",
@@ -539,7 +539,7 @@ function traduzPt() {
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         items: 1,
-        loop: true,
+        loop: false,
         margin: 10,
         nav: true,
         autoplay: false

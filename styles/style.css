@@ -161,7 +161,10 @@ section {
 /* PRINCIPAL */
 
 .principal-container-titulo {
-    background-color: var(--cor-azul-clarinho);
+    background-image: url(/assets/fundo-hero-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,20 +172,32 @@ section {
     width: 100%;
     height: 600px;
     border-radius: 0px 0px 98px 98px;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
+}
+
+.principal-titulo{
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    width: 800px;
+    color: #ffffff;
 }
 
 .principal-paragrafo {
-    color: var(--cor-cinza);
-    width: 600px;
+    color: #ffffff;
+    width: 800px;
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: 400;
     word-spacing: 0.1em;
 }
 
 .principal-paragrafo-destaque {
     color: var(--cor-secundaria);
     margin: 0 0.2em;
+}
+
+.principal-titulo-strong{
+    color: var(--cor-secundaria);
 }
 
 .principal-paragrafo-icon {
@@ -288,6 +303,7 @@ section {
     margin-top: 1em;
     font-size: 1.2em;
     font-weight: 500;
+    color: var(--cor-cinza);
 }
 
 #lottie-animation{
@@ -388,6 +404,7 @@ section {
 
 .historia-card-paragrafo {
     padding: 8px;
+    color: var(--cor-cinza);
 }
 
 .historia-card-contato {
@@ -728,6 +745,7 @@ section {
 .contato-frase-container-img {
     text-align: center;
     width: 400px;
+    color: var(--cor-cinza);
 }
 
 .contato-frase-img {
@@ -831,11 +849,17 @@ footer p {
     /* PRINCIPAL */
 
     .principal-container-titulo {
-        margin-bottom: 3em;
+        height: 800px;
+        margin-bottom: 1em;
     }
 
-    .principal-logo {
-        width: 60%;
+    .principal-titulo{
+        font-size: 2em;
+        width: 700px;
+    }
+
+    .principal-paragrafo{
+        width: 700px;
     }
 
     /* HISTORIA */
@@ -854,6 +878,28 @@ footer p {
     }
 
     /* ESCOLHA */
+    .historia-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .col-md-4{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .historia-card{
+        width: 500px !important;
+    }
+     
+    .historia-card-item{
+        width: 500px;
+    }
+
     .historia-card-botao-contato {
         width: 100%;
     }
@@ -890,18 +936,23 @@ footer p {
         padding: 12px 12px 24px 12px;
         gap: 3em;
     }
+
+    .contato-links{
+        align-items: center;
+    }
 }
 
 @media (max-width: 480px) {
     /* HEADER */
 
-    .header-ul {}
-
     /* PRINCIPAL */
     .principal-container-titulo {
-        height: 500px;
+        height: 800px;
         border-radius: 0px 0px 49px 49px;
+    }
 
+    .principal-titulo{
+        width: 90%;
     }
 
     .principal-paragrafo {
@@ -932,7 +983,6 @@ footer p {
 
     /* ESCOLHAS */
     .historia-card-contato {
-        width: 900px;
     }
 
     .historia-card-botao-contato {
