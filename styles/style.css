@@ -303,7 +303,6 @@ section {
 }
 
 .historia-paragrafo {
-    width: 60%;
     margin-top: 1em;
     font-size: 1.2em;
     font-weight: 500;
@@ -336,13 +335,18 @@ section {
 }
 
 .historia-container-titulo-strong {
-    color: var(--cor-azul-claro);
+    color: #00ccff;
+    font-weight: 900;
     margin: 0 0.2em;
 }
 
 .historia-container-icon {
     padding: 12px;
     margin-left: -0.5em;
+}
+
+.historia-container-icon a{   
+    color: #00ccff;
 }
 
 .historia-container-escolha-buttons {
