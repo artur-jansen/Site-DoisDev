@@ -53,13 +53,13 @@ window.addEventListener('scroll', function () {
         headerLinks.forEach(link => link.classList.add('scrolled'));
         iconMenuHeader.classList.add('scrolled');
         voltarTopoBtn.classList.add('scrolled');
-        headerLogo.src='./../assets/logo-azul.svg'
+        headerLogo.src='./assets/logo-azul.svg'
     } else {
         header.classList.remove('scrolled');
         headerLinks.forEach(link => link.classList.remove('scrolled'));
         iconMenuHeader.classList.remove('scrolled');
         voltarTopoBtn.classList.remove('scrolled');
-        headerLogo.src='./../assets/logo-branco.svg'
+        headerLogo.src='./assets/logo-branco.svg'
     }
 });
 
