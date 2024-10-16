@@ -703,15 +703,13 @@ section {
     background-color: var(--cor-azul-clarinho);
     padding: 12px;
     border-radius: 24px;
-    height: 100%;
 }
 
 .contato-links {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 3em;
-    padding-top: 1em;
+    justify-content: space-around;
+    height: 100%;
 }
 
 .topico-contato {
@@ -954,6 +952,7 @@ footer p {
 
     .contato-links{
         align-items: center;
+        gap: 3em;
     }
 }
 
@@ -968,10 +967,12 @@ footer p {
 
     .principal-titulo{
         width: 90%;
+        font-size: 1.8em;
     }
-
+    
     .principal-paragrafo {
         width: 90%;
+        font-size: 1.3em;
     }
 
     .principal-sabermais{
