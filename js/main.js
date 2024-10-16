@@ -43,14 +43,23 @@ AOS.init({
 
 window.addEventListener('scroll', function () {
     const header = document.querySelector('.header');
+    const headerLogo = document.querySelector('.header-logo');
+    const headerLinks = document.querySelectorAll('.header-link');
+    const iconMenuHeader = document.querySelector('.fas');
     const voltarTopoBtn = document.querySelector('.voltarTopo');
 
     if (window.scrollY > 50) {
         header.classList.add('scrolled');
+        headerLinks.forEach(link => link.classList.add('scrolled'));
+        iconMenuHeader.classList.add('scrolled');
         voltarTopoBtn.classList.add('scrolled');
+        headerLogo.src='./../assets/logo-azul.svg'
     } else {
         header.classList.remove('scrolled');
+        headerLinks.forEach(link => link.classList.remove('scrolled'));
+        iconMenuHeader.classList.remove('scrolled');
         voltarTopoBtn.classList.remove('scrolled');
+        headerLogo.src='./../assets/logo-branco.svg'
     }
 });
 
