@@ -388,8 +388,10 @@ section {
     background-color: var(--cor-secundaria);
     color: white;
     display: flex;
+    align-items: center;
     gap: 0.5em;
     padding: 10px;
+    height: 20%;
     border-radius: 8px 8px 0px 0px;
 }
 
@@ -975,6 +977,11 @@ footer p {
     /* HISTORIA */
     .historia-container {
         flex-direction: column;
+        padding-top: 0;
+    }
+    
+    .historia-subcontainer{
+        padding-top: 0;
     }
 
     .img-historia {
@@ -982,7 +989,6 @@ footer p {
     }
 
     .historia-titulo {
-        font-size: 1.5em;
         margin-bottom: 1.5em;
     }
 
