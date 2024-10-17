@@ -13,10 +13,10 @@ toggler.addEventListener('click', () => {
 hamburguer.addEventListener('click', () => {
     hamburguer.classList.toggle('active');
     nav.classList.toggle('active');
+    links.forEach(linkIt => linkIt.style.color = 'var(--cor-secundaria)');
 });
 
 links.forEach(link => {
-    link.style.color = 'var(--cor-secundaria)';
     link.addEventListener('click', () => {
         nav.classList.remove('active');
         hamburguer.classList.remove('active');

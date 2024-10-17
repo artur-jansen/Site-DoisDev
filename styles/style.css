@@ -164,6 +164,111 @@ section {
 /* PRINCIPAL */
 /* PRINCIPAL */
 
+.iconHeader{
+    position: absolute;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+}
+
+.iconHeader1{
+    left: 100px;
+    top: 150px;
+    animation: flutuando01 3s ease;
+    animation-iteration-count: infinite;
+}
+
+.iconHeader2{
+    left: 100px;
+    top: 300px;
+    animation: flutuando02 3s ease;
+    animation-iteration-count: infinite;
+}
+
+.iconHeader3{
+    left: 100px;
+    top: 450px;
+    animation: flutuando01 3s ease;
+    animation-iteration-count: infinite;
+}
+
+.iconHeader4{
+    right: 100px;
+    top: 150px;
+    animation: flutuando03 3s ease;
+    animation-iteration-count: infinite;
+}
+
+.iconHeader5{
+    right: 100px;
+    top: 300px;
+    animation: flutuando04 3s ease;
+    animation-iteration-count: infinite;
+}
+
+.iconHeader6{
+    right: 100px;
+    top: 450px;
+    animation: flutuando03 3s ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flutuando01{
+    0%{
+        transform: translateY(0px) rotate(15deg);       
+    }
+    
+    50%{
+        transform: translateY(-20px) rotate(-5deg);
+    }
+    
+    100%{
+        transform: translateY(0px) rotate(15deg);        
+    }
+}
+
+@keyframes flutuando02{
+    0%{
+        transform: translateY(0px) rotate(-15deg);       
+    }
+    
+    50%{
+        transform: translateY(-20px) rotate(5deg);
+    }
+    
+    100%{
+        transform: translateY(0px) rotate(-15deg);        
+    }
+}
+
+@keyframes flutuando03{
+    0%{
+        transform: translateY(0px) rotate(15deg);       
+    }
+    
+    50%{
+        transform: translateY(20px) rotate(-5deg);
+    }
+    
+    100%{
+        transform: translateY(0px) rotate(15deg);        
+    }
+}
+
+@keyframes flutuando04{
+    0%{
+        transform: translateY(0px) rotate(-15deg);       
+    }
+    
+    50%{
+        transform: translateY(20px) rotate(5deg);
+    }
+    
+    100%{
+        transform: translateY(0px) rotate(-15deg);        
+    }
+}
+
 .principal-container-titulo {
     background-image: url(./../assets/fundo-hero-desktop.png);
     background-size: cover;
@@ -810,6 +915,32 @@ footer p {
 /* RESPONSIVIDADE */
 /* RESPONSIVIDADE */
 
+@media (max-width: 1024px) {
+    .iconHeader1{
+        left: 20px;
+    }
+    
+    .iconHeader2{
+        left: 20px;
+    }
+
+    .iconHeader3{
+        left: 20px;
+    }
+
+    .iconHeader4{
+        right: 20px;
+    }
+
+    .iconHeader5{
+        right: 20px;
+    }
+
+    .iconHeader6{
+        right: 20px;
+    }
+}
+
 @media (max-width: 980px) {
 
     /* HEADER */
@@ -860,6 +991,36 @@ footer p {
     }
 
     /* PRINCIPAL */
+
+    .iconHeader1{
+        top: 150px;
+        left: 40px;
+    }
+    
+    .iconHeader2{
+        top: 150px;
+        left: 340px;
+    }
+
+    .iconHeader3{
+        top: 150px;
+        left: 640px;
+    }
+
+    .iconHeader4{
+        top: 550px;
+        left: 40px;
+    }
+
+    .iconHeader5{
+        top: 550px;
+        left: 340px;
+    }
+
+    .iconHeader6{
+        top: 550px;
+        left: 640px;
+    }
 
     .principal-container-titulo {
         height: 800px;
@@ -960,6 +1121,47 @@ footer p {
     /* HEADER */
 
     /* PRINCIPAL */
+    .iconHeader{
+        height: 30px;
+        width: 30px;
+    }
+
+    .iconHeader1{
+        top: 450px;
+        left: 50px;
+    }
+    
+    .iconHeader2{
+        top: 450px;
+        left: 100px;
+    }
+
+    .iconHeader3{
+        top: 450px;
+        left: 150px;
+    }
+
+    .iconHeader4{
+        top: 450px;
+        left: 200px;
+        animation: flutuando01 3s ease;
+        animation-iteration-count: infinite;
+    }
+
+    .iconHeader5{
+        top: 450px;
+        left: 250px;
+        animation: flutuando02 3s ease;
+        animation-iteration-count: infinite;
+    }
+
+    .iconHeader6{
+        top: 450px;
+        left: 300px;
+        animation: flutuando01 3s ease;
+        animation-iteration-count: infinite;
+    }
+
     .principal-container-titulo {
         height: 550px;
         border-radius: 0px 0px 49px 49px;
