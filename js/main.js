@@ -90,6 +90,7 @@ const resources = {
             "headerLink2": "What we do",
             "headerLink3": "Services",
             "headerLink4": "Contact",
+            "tituloPrincipal": "TRANSFORM YOUR ONLINE PRESENCE AND <strong class=\"principal-titulo-strong\">REACH MORE CUSTOMERS</strong>",
             "paragrafoPrincipal": "Boost your business and with our carefully developed strategies to reach your customer and turn clicks into sales.",
             "textoSaberMais": "<button class=\"principal-sabermais\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSd1t9kSHXyuDuIIo45l06cWc2uIBfJJNyYwLB20L8vMkGEp5Q/viewform?usp=sharing\"><a href=\"https://docs.google.com/forms/d/e/1FAIpQLSd1t9kSHXyuDuIIo45l06cWc2uIBfJJNyYwLB20L8vMkGEp5Q/viewform?usp=sharing\" class=\"principal-sabermais-link\"><span>MAKE YOUR BUDGET</span></a><i class=\"bi bi-pencil-square icon-card-principal \"></i></button>",
             "tituloProposito": "OUR PURPOSE",
@@ -153,6 +154,7 @@ const resources = {
             "headerLink2": "O que fazemos",
             "headerLink3": "Serviços",
             "headerLink4": "Contato",
+            "tituloPrincipal": "TRANSFORME SUA PRESENÇA ONLINE E <strong class=\"principal-titulo-strong\">ALCANCE MAIS CLIENTES</strong>",
             "paragrafoPrincipal": "Impulsione seu negócio e aumente seu alcance com as nossas estratégias minuciosamente desenvolvidas para atingir o seu cliente e transformar cliques em vendas.",
             "textoSaberMais": "<button class=\"principal-sabermais\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSd1t9kSHXyuDuIIo45l06cWc2uIBfJJNyYwLB20L8vMkGEp5Q/viewform?usp=sharing\"><a href=\"https://docs.google.com/forms/d/e/1FAIpQLSd1t9kSHXyuDuIIo45l06cWc2uIBfJJNyYwLB20L8vMkGEp5Q/viewform?usp=sharing\" class=\"principal-sabermais-link\"><span>FAÇA SEU ORÇAMENTO</span></a><i class=\"bi bi-pencil-square icon-card-principal \"></i></button>",
             "tituloProposito": "NOSSO PROPÓSITO",
@@ -239,6 +241,9 @@ function updateContent() {
 
     const headerLink4 = document.querySelector('.header-link4');
     headerLink4.innerHTML = i18next.t('headerLink4');
+
+    const tituloPrincipal = document.querySelector('.principal-titulo');
+    tituloPrincipal.innerHTML = i18next.t('tituloPrincipal');
 
     const paragrafoPrincipal = document.querySelector('.principal-paragrafo');
     paragrafoPrincipal.innerHTML = i18next.t('paragrafoPrincipal');

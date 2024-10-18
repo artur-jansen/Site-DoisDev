@@ -29,10 +29,13 @@ body {
 }
 
 .voltarTopo{
-    background-color: transparent;
+    background-color: #f8f8f8;
     color: var(--cor-destaque);
-    border: none;
+    border: 2px solid;
+    border-radius: 100%;
     font-size: 2em;
+    height: 50px;
+    width: 50px;
     display: none;
     position: fixed;
     bottom: 20px;
@@ -42,7 +45,7 @@ body {
 
 .voltarTopo:hover{
     transition: 500ms;
-    transform: scale(1.02);
+    transform: translateY(-2px);
     color: #ffae2c;
 }
 
@@ -982,7 +985,6 @@ footer p {
 
     .header-link-icons {
         display: flex;
-        flex-direction: column;
         gap: 1em;
     }
 
