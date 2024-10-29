@@ -28,6 +28,37 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.whatsApp{
+    background-color: #25D366;
+    color: #ffffff;
+    border: 2px solid;
+    border-radius: 100%;
+    font-size: 1.5em;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 10000;
+}
+
+.whatsApp:hover{
+    transition: 500ms;
+    transform: rotate(360deg);
+    border-radius: 12px;
+    color: #25D366;
+    background-color: #ffffff;
+}
+
+.whatsApp-link{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.whatsApp:hover .whatsApp-link{
+    color: #25D366;
+}
+
 .voltarTopo{
     background-color: #f8f8f8;
     color: var(--cor-destaque);
@@ -45,8 +76,11 @@ body {
 
 .voltarTopo:hover{
     transition: 500ms;
-    transform: translateY(-2px);
-    color: #ffae2c;
+    transform: rotate(360deg);
+    border-radius: 12px;
+    color: #ffffff;
+    background-color: var(--cor-destaque);
+    border: transparent;
 }
 
 .voltarTopo.scrolled {
@@ -113,7 +147,7 @@ body {
 
 .header-link-icon:hover {
     transition: 500ms;
-    transform: scale(1.01);
+    transform: rotate(360deg);
 }
 
 .navbar-toggler-icon {
@@ -172,6 +206,11 @@ section {
     color: #ffffff;
     width: 50px;
     height: 50px;
+}
+
+.iconHeader:hover{
+    border: 3px solid var(--cor-azul-claro);
+    border-radius: 12px;
 }
 
 .iconHeader1{
@@ -403,11 +442,9 @@ section {
 
 .historia-titulo {
     color: var(--cor-secundaria);
-    font-size: 2em;
+    font-size: 3em;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    padding-top: 1em;
-
 }
 
 .historia-paragrafo {
@@ -617,7 +654,7 @@ section {
 .tipos-titulo{
     text-align: center;
     color: #fff;
-    font-size: 2em;
+    font-size: 3em;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     padding-top: 2em;
@@ -706,7 +743,7 @@ section {
 .servicos-titulo {
     text-align: center;
     color: #fff;
-    font-size: 2em;
+    font-size: 3em;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     padding-top: 2em;
@@ -717,7 +754,7 @@ section {
     align-items: center;
     justify-content: center;
     gap: 1em;
-    margin-top: 8em;
+    margin-top: 5em;
     background-color: #fff;
     padding: 54px 34px 0px 34px;
     border-radius: 24px;
@@ -794,7 +831,7 @@ section {
     color: var(--cor-secundaria);
     padding-top: 2em;
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
 }
@@ -1049,8 +1086,8 @@ footer p {
     }
 
     #lottie-animation{
-        width: 250px;
-        height: 300px;
+        width: 350px;
+        height: 400px;
     }
 
     /* ESCOLHA */
@@ -1198,6 +1235,7 @@ footer p {
     }
 
     .historia-titulo {
+        font-size: 2em;
         margin-bottom: 1.5em;
     }
 
@@ -1206,6 +1244,7 @@ footer p {
     }
 
     /* ESCOLHAS */
+
     .historia-card-contato {
     }
 
@@ -1214,6 +1253,10 @@ footer p {
     }
 
     /* TIPOS DE SITE */
+
+    .tipos-titulo{
+        font-size: 2em;
+    }
 
     .container-tipo-img{
         width: 300px;
@@ -1230,11 +1273,19 @@ footer p {
         padding: 1em 0 0 0;
     }
 
+    .servicos-titulo{
+        font-size: 2em;
+    }
+
     .owl-carousel .owl-item img {
         width: 80%;
     }
 
     /* CONTATO */
+    .contato-titulo{
+        font-size: 2em;
+    }
+
     .contato-opcoes {
         gap: 1em;
     }
