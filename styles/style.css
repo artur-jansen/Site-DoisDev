@@ -31,7 +31,7 @@ body {
 .whatsApp{
     background-color: #25D366;
     color: #ffffff;
-    border: 2px solid;
+    border: transparent;
     border-radius: 100%;
     font-size: 1.5em;
     height: 50px;
