@@ -45,6 +45,7 @@ body {
 .whatsApp:hover{
     transition: 500ms;
     transform: rotate(360deg);
+    border: 2px solid #25D366;
     border-radius: 12px;
     color: #25D366;
     background-color: #ffffff;
