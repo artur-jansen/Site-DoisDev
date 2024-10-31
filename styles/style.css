@@ -475,13 +475,12 @@ section {
 
 .historia-container-titulo {
     color: var(--cor-cinza);
-    margin-bottom: 1.5em;
     font-family: 'Roboto', sans-serif;
-    word-spacing: 0.1em;
+    text-align: center;
 }
 
 .historia-container-titulo-strong {
-    color: #00ccff;
+    color: var(--cor-secundaria);
     font-weight: 900;
     margin: 0 0.2em;
 }
@@ -500,7 +499,7 @@ section {
     align-items: center;
     justify-content: center;
     gap: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .historia-container-escolha-button {
@@ -590,6 +589,7 @@ section {
     transition: 600ms;
     transform: scale(1.03);
     background-color: var(--cor-secundaria);
+    border: 1px solid #ffffff;
     cursor: pointer;
 }
 
@@ -617,6 +617,11 @@ section {
     border-radius: 0px 26px 26px 26px;
     padding: 12px;
 }
+
+.historia-card-botao-contato:hover .icon-card-contato{
+    background-color: transparent;
+}
+
 .pulsate-on-hover:hover,
 .pulsate-on-hover:focus {
     animation: pulseAnimation 1.5s infinite;
@@ -673,11 +678,23 @@ section {
 .container-tipo{
     background-color: #fff;
     border-radius: 24px;
-    width: 100%;
+    width: 70%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 2em;
+}
+
+.container-tipo-texto{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1em;
+    justify-content: center;
+    align-items: left;
+    width: 50%;
+    padding: 0 0 0 0.5em;
+    border-left: 4px solid;
 }
 
 .container-tipo-titulo{
@@ -686,49 +703,102 @@ section {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     padding-top: 0.5em;
+}
+
+.container-tipo-texto p{
+    color: #000000;
+}
+
+.container-tipo-botao{
+    background-color: #14427e;
+    border: none;
+    border-radius: 26px;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-tipo-botao-link{
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    gap: 0.2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1em;
+}
+
+.container-tipo-botao-link-texto{
+    color: #ffffff;
+}
+
+.icon-card-tipo {
+    background-color: #ffffff;
+    color: #14427e;
+    height: 100%;
+    border-radius: 0px 26px 26px 26px;
+    padding: 12px;
+}
+
+.container-tipo-botao-link {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    gap: 0.2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1em;
+}
+
+.container-tipo-botao:hover {
+    transition: 600ms;
+    transform: scale(1.02);
+    background-color: #ffffff;
+    border: 1px solid #14427e;
+    cursor: pointer;
+}
+
+.container-tipo-botao:hover .container-tipo-botao-link-texto {
+    color: #14427e;
+}
+
+.container-tipo-botao:hover .icon-card-tipo{
+    background-color: transparent;
+}
+
+.container-tipo-topicos{
+    display: flex;
     text-align: center;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-top: 0.5em;
+}
+
+.container-tipo-topicos-item{
+    border: 3px solid var(--cor-destaque);
+    border-radius: 12px;
+    padding: 0.1em 0.4em;
+    color: #14427e;
+}
+
+.container-tipo-topicos-item:hover{
+    transition: 1s;
+    transform: translateY(-2px);
+    background-color: #14427e;
+    color: #ffffff;
+    cursor: pointer;
 }
 
 .container-tipo-img{
-    width: 700px;
-    height: 500px;
-}
-
-.container-tipo-button{
-    background-color: #ffffff;
-    color: var(--cor-secundaria);
-    border: 2px solid var(--cor-secundaria);
-    border-radius: 12px;
-    width: 700px;
-    height: 100%;
-    font-size: 1.5em;
-    margin-bottom: 1em;
-}
-
-.container-tipo-button:hover{
-    background-color: var(--cor-secundaria);
-    color: #ffffff;
-    transform: scale(1.05);
-    transition: 1s;
-}
-
-.container-tipo-button-modal-titulo{
-    color: var(--cor-secundaria);
-}
-
-.container-tipo-button-modal-fechar{
-    background-color: var(--cor-secundaria);
-    color: #ffffff;
-    border: none;
-    border-radius: 6px;
-    padding: 6px;
-}
-
-.container-tipo-button-modal-fechar:hover{
-    transition: 1s;
-    background-color: #ffffff;
-    color: var(--cor-secundaria);
-    border: 2px solid var(--cor-secundaria);
+    width: 300px;
+    height: 300px;
 }
 
 /* SERVICOS */

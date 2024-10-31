@@ -95,7 +95,7 @@ const resources = {
             "textoSaberMais": "<button class=\"principal-sabermais\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSd1t9kSHXyuDuIIo45l06cWc2uIBfJJNyYwLB20L8vMkGEp5Q/viewform?usp=sharing\"><a href=\"https://docs.google.com/forms/d/e/1FAIpQLSd1t9kSHXyuDuIIo45l06cWc2uIBfJJNyYwLB20L8vMkGEp5Q/viewform?usp=sharing\" class=\"principal-sabermais-link\"><span>MAKE YOUR BUDGET</span></a><i class=\"bi bi-pencil-square icon-card-principal \"></i></button>",
             "tituloProposito": "OUR PURPOSE",
             "paragrafoProposito": "DoisDev was founded to help companies and service providers use technology to their advantage. We focus on creating websites that boost and strengthen your business, providing greater visibility and credibility. A well-designed website attracts more clients and makes life easier for both the client and the company or service provider. In today's scenario, where technology plays a central role in our lives, we are ready to update your business and connect it to the modern world.",
-            "tituloEscolhaCerta": "<h4 class=\"historia-container-titulo\">WHAT MAKES US<strong class=\"historia-container-titulo-strong\">THE RIGHT CHOICE</strong>FOR YOUR BUSINESS <button class=\"border-0 bg-transparent historia-container-icon\"><a href=\"#escolha-container\"><i class=\"bi bi-arrow-down-circle-fill\"></i></a></button></h4>",
+            "tituloEscolhaCerta": "<h4 class=\"historia-container-titulo\">WHAT MAKES US<strong class=\"historia-container-titulo-strong\">THE RIGHT CHOICE</strong>FOR YOUR BUSINESS <button class=\"border-0 bg-transparent historia-container-icon\"></h4>",
             "performanceBtn": "Performance",
             "performance_title": "SPEED AND PERFORMANCE",
             "performance_desc": "With our team from the best web development agency in Feira de Santana, we optimize the code and make your site as smooth as soap, accessible on any device.",
@@ -118,15 +118,10 @@ const resources = {
             "qualidade_title3": "SEEKING PERFECTION",
             "qualidade_desc3": "Our goal is to create your site perfectly, combining your ideas with ours and transforming them into an amazing and high-quality site, pleasing your potential client.",
             "tiposTitulo": "WHAT WE DO",
-            "tituloLanding": "LANDING PAGES",
-            "tituloCorporativo": "CORPORATE WEBSITES",
-            "tituloECommerce": "E-COMMERCE",
-            "tituloCampanhas": "CAMPAIGN WEBSITES",
-            "paragrafoLanding": "A landing page is a single page that presents a service or business in a direct way, helping you to get to know it quickly and encouraging actions such as getting in touch or trying out the service.",
-            "tituloModalLanding": "LANDING PAGES",
-            "tituloModalCorporativo": "CORPORATE WEBSITES",
-            "tituloModalECommerce": "E-COMMERCE",
-            "tituloModalCampanhas": "CAMPAIGN WEBSITES",
+            "tituloLanding": "I WANT A LANDING PAGE",
+            "tituloCorporativo": "I WANT A CORPORATE WEBSITE",
+            "tituloECommerce": "I WANT A E-COMMERCE",
+            "tituloCampanhas": "I WANT A CAMPAIGN WEBSITE",
             "paragrafoLanding": "A landing page is a single page that presents a service or business in a direct way, helping you to get to know it quickly and encouraging actions such as getting in touch or trying out the service.",
             "paragrafoCorporativo": "A corporate website is a style of website that officially represents a company, offering information about its products, services, values and team. It serves as a point of contact for clients and partners, helping to build credibility and facilitate communication.",
             "paragrafoECommerce": "An e-commerce is an online store where you can buy products or services directly over the internet. It offers a convenient shopping experience, allowing you to explore, choose and pay for items without leaving your home, with delivery options directly to your door.",
@@ -159,7 +154,7 @@ const resources = {
             "textoSaberMais": "<button class=\"principal-sabermais\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSd1t9kSHXyuDuIIo45l06cWc2uIBfJJNyYwLB20L8vMkGEp5Q/viewform?usp=sharing\"><a href=\"https://docs.google.com/forms/d/e/1FAIpQLSd1t9kSHXyuDuIIo45l06cWc2uIBfJJNyYwLB20L8vMkGEp5Q/viewform?usp=sharing\" class=\"principal-sabermais-link\"><span>FAÇA SEU ORÇAMENTO</span></a><i class=\"bi bi-pencil-square icon-card-principal \"></i></button>",
             "tituloProposito": "NOSSO PROPÓSITO",
             "paragrafoProposito": "A DoisDev surgiu com o propósito de ajudar empresas e prestadores de serviços a aproveitarem a tecnologia a seu favor. Focamos na criação de sites que impulsionam e fortalecem o seu negócio, proporcionando maior visibilidade e credibilidade. Um site bem elaborado atrai mais clientes e facilita a vida tanto do cliente quanto da empresa ou prestador de serviços. No cenário atual, em que a tecnologia desempenha um papel central em nossas vidas, estamos prontos para atualizar o seu negócio e conectá-lo ao mundo moderno.",
-            "tituloEscolhaCerta": "<h4 class=\"historia-container-titulo\">O QUE NOS TORNA A<strong class=\"historia-container-titulo-strong\">ESCOLHA CERTA</strong>PARA O SEU NEGÓCIO <button class=\"border-0 bg-transparent historia-container-icon\"><a href=\"#escolha-container\"><i class=\"bi bi-arrow-down-circle-fill\"></i></a></button></h4>",
+            "tituloEscolhaCerta": "<h4 class=\"historia-container-titulo\">O QUE NOS TORNA A<strong class=\"historia-container-titulo-strong\">ESCOLHA CERTA</strong>PARA O SEU NEGÓCIO <button class=\"border-0 bg-transparent historia-container-icon\"></h4>",
             "performanceBtn": "Performance",
             "performance_title": "VELOCIDADE E PERFORMANCE",
             "performance_desc": "Com a nossa equipe da melhor agência de desenvolvimento web de Feira de Santana, otimizamos o código e deixamos seu site liso igual sabonete, acessível em qualquer dispositivo.",
@@ -182,17 +177,13 @@ const resources = {
             "qualidade_title3": "BUSCANDO A PERFEIÇÃO",
             "qualidade_desc3": "Temos o objetivo de criar seu site de forma perfeita, unindo suas ideias às nossas e transformando-as em um site incrível e de extrema qualidade, agradando seu cliente em potencial.",
             "tiposTitulo": "O QUE FAZEMOS",
-            "tituloLanding": "LANDING PAGES",
-            "tituloCorporativo": "SITES CORPORATIVOS",
-            "tituloECommerce": "E-COMMERCE",
-            "tituloCampanhas": "SITES PARA CAMPANHAS",
-            "tituloModalLanding": "LANDING PAGES",
-            "tituloModalCorporativo": "SITES CORPORATIVOS",
-            "tituloModalECommerce": "E-COMMERCE",
-            "tituloModalCampanhas": "SITES PARA CAMPANHAS",
+            "tituloLanding": "QUERO UMA LANDING PAGE",
+            "tituloCorporativo": "QUERO UM SITE CORPORATIVO",
+            "tituloECommerce": "QUERO UMA LOJA VIRTUAL",
+            "tituloCampanhas": "QUERO UM SITE PARA CAMPANHA",
             "paragrafoLanding": "Uma landing page é uma página única que apresenta um serviço ou negócio de forma direta, ajudando você a conhecê-lo rapidamente e incentivando ações como entrar em contato ou experimentar o serviço.",
             "paragrafoCorporativo": "Um site corporativo é um estilo de site que representa oficialmente uma empresa, oferecendo informações sobre seus produtos, serviços, valores e equipe. Ele serve como um ponto de contato para clientes e parceiros, ajudando a construir credibilidade e facilitar a comunicação.",
-            "paragrafoECommerce": "Um e-commerce é uma loja online onde você pode comprar produtos ou serviços diretamente pela internet. Ele oferece uma experiência de compra conveniente, permitindo que você explore, escolha e pague por itens sem sair de casa, com opções de entrega diretamente na sua porta.",
+            "paragrafoECommerce": "Uma loja virtual é uma loja online onde você pode comprar produtos ou serviços diretamente pela internet. Ele oferece uma experiência de compra conveniente, permitindo que você explore, escolha e pague por itens sem sair de casa, com opções de entrega diretamente na sua porta.",
             "paragrafoCampanhas": "Um site para campanhas é uma página dedicada a promover uma iniciativa específica, como uma campanha de marketing ou arrecadação de fundos. Ele é projetado para engajar visitantes, informar sobre a causa ou produto, e incentivar ações como doações, assinaturas ou compartilhamentos.",
             "tipoButtonSaibaMaisLanding": "Saiba Mais",
             "tipoButtonSaibaMaisCorporativo": "Saiba Mais",
@@ -305,18 +296,6 @@ function updateContent() {
     const tituloCampanhas = document.querySelector('.titulo-campanhas');
     tituloCampanhas.innerHTML = i18next.t('tituloCampanhas');
     
-    const tituloModalLanding = document.querySelector('.titulo-landing-modal');
-    tituloModalLanding.innerHTML = i18next.t('tituloModalLanding');
-
-    const tituloModalCorporativo = document.querySelector('.titulo-corporativo-modal');
-    tituloModalCorporativo.innerHTML = i18next.t('tituloModalCorporativo');
-
-    const tituloModalECommerce = document.querySelector('.titulo-e-commerce-modal');
-    tituloModalECommerce.innerHTML = i18next.t('tituloModalECommerce');
-
-    const tituloModalCampanhas = document.querySelector('.titulo-campanhas-modal');
-    tituloModalCampanhas.innerHTML = i18next.t('tituloModalCampanhas');
-
     const paragrafoLanding = document.querySelector('.paragrafo-landing');
     paragrafoLanding.innerHTML = i18next.t('paragrafoLanding');
 
