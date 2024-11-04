@@ -1193,9 +1193,16 @@ footer p {
     }
 
     /* TIPOS DE SITE */
+    .container-tipo{
+        flex-direction: column-reverse;
+    }
+
+    .container-tipo-texto{
+        width: 100%;
+    }
 
     .container-tipo-img{
-        width: 500px;
+        width: 300px;
         height: 300px;
     }
 
@@ -1316,27 +1323,33 @@ footer p {
 
     /* ESCOLHAS */
 
-    .historia-card-contato {
-    }
-
     .historia-card-botao-contato {
         width: 100%;
     }
 
     /* TIPOS DE SITE */
 
-    .tipos-titulo{
-        font-size: 2em;
+    .container-tipos{
+        padding: 0;
+    }
+
+    .container-tipo-titulo{
+        font-size: 1.5em;
     }
 
     .container-tipo-img{
-        width: 300px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 
     .container-tipo-button{
         width: 300px;
         font-size: 1em;
+    }
+
+    .container-tipo-topicos{
+        flex-wrap: wrap;
+        gap: 1em;
     }
 
     /* SERVICOS */

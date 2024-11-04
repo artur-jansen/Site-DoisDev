@@ -126,14 +126,22 @@ const resources = {
             "paragrafoCorporativo": "A corporate website is a style of website that officially represents a company, offering information about its products, services, values and team. It serves as a point of contact for clients and partners, helping to build credibility and facilitate communication.",
             "paragrafoECommerce": "An e-commerce is an online store where you can buy products or services directly over the internet. It offers a convenient shopping experience, allowing you to explore, choose and pay for items without leaving your home, with delivery options directly to your door.",
             "paragrafoCampanhas": "A campaign website is a page dedicated to promoting a specific initiative, such as a marketing or fundraising campaign. It is designed to engage visitors, inform them about the cause or product, and encourage actions such as donations, subscriptions or shares.",
-            "tipoButtonSaibaMaisLanding": "Read more",
-            "tipoButtonSaibaMaisCorporativo": "Read more",
-            "tipoButtonSaibaMaisECommerce": "Read more",
-            "tipoButtonSaibaMaisCampanha": "Read more",
-            "tipoButtonFecharLanding": "Close window",
-            "tipoButtonFecharCorporativo": "Close window",
-            "tipoButtonFecharECommerce": "Close window",
-            "tipoButtonFecharCampanhas": "Close window",
+            "lp1": "Value Proposition",
+            "lp2": "Call to Action",
+            "lp3": "Direct Objectives",
+            "corporativo1":"Business History",
+            "corporativo2":"Services",
+            "corporativo3":"Company mission",
+            "ecommerce1":"Visibility",
+            "ecommerce2":"Description",
+            "ecommerce3":"Anywhere Control",
+            "campanha1":"Objectives",
+            "campanha2":"Advertised Services",
+            "campanha3":"Inform Campaign",
+            "botaoSites1":"MAKING AN INVESTMENT",
+            "botaoSites2":"MAKING AN INVESTMENT",
+            "botaoSites3":"MAKING AN INVESTMENT",
+            "botaoSites4":"MAKING AN INVESTMENT",
             "botaoEntreContato": "CONTACT US",
             "tituloServicos": "OUR SERVICES",
             "contatoTitulo": "CONTACT",
@@ -185,14 +193,22 @@ const resources = {
             "paragrafoCorporativo": "Um site corporativo é um estilo de site que representa oficialmente uma empresa, oferecendo informações sobre seus produtos, serviços, valores e equipe. Ele serve como um ponto de contato para clientes e parceiros, ajudando a construir credibilidade e facilitar a comunicação.",
             "paragrafoECommerce": "Uma loja virtual é uma loja online onde você pode comprar produtos ou serviços diretamente pela internet. Ele oferece uma experiência de compra conveniente, permitindo que você explore, escolha e pague por itens sem sair de casa, com opções de entrega diretamente na sua porta.",
             "paragrafoCampanhas": "Um site para campanhas é uma página dedicada a promover uma iniciativa específica, como uma campanha de marketing ou arrecadação de fundos. Ele é projetado para engajar visitantes, informar sobre a causa ou produto, e incentivar ações como doações, assinaturas ou compartilhamentos.",
-            "tipoButtonSaibaMaisLanding": "Saiba Mais",
-            "tipoButtonSaibaMaisCorporativo": "Saiba Mais",
-            "tipoButtonSaibaMaisECommerce": "Saiba Mais",
-            "tipoButtonSaibaMaisCampanha": "Saiba Mais",
-            "tipoButtonFecharLanding": "Fechar janela",
-            "tipoButtonFecharCorporativo": "Fechar janela",
-            "tipoButtonFecharECommerce": "Fechar janela",
-            "tipoButtonFecharCampanhas": "Fechar janela",
+            "lp1": "Proposta de Valor",
+            "lp2": "Chamada para Ação",
+            "lp3": "Objetivos Diretos",
+            "corporativo1": "História do Negócio",
+            "corporativo2": "Serviços",
+            "corporativo3": "Missão da Empresa",
+            "ecommerce1": "Visibilidade",
+            "ecommerce2": "Descrição",
+            "ecommerce3": "Controle em Qualquer Lugar",
+            "campanha1": "Objetivos",
+            "campanha2": "Serviços Anunciados",
+            "campanha3": "Informar Campanha",
+            "botaoSites1":"FAZER INVESTIMENTO",
+            "botaoSites2":"FAZER INVESTIMENTO",
+            "botaoSites3":"FAZER INVESTIMENTO",
+            "botaoSites4":"FAZER INVESTIMENTO",
             "botaoEntreContato": "ENTRE EM CONTATO",
             "tituloServicos": "NOSSOS SERVIÇOS",
             "contatoTitulo": "CONTATO",
@@ -308,29 +324,53 @@ function updateContent() {
     const paragrafoCampanhas = document.querySelector('.paragrafo-campanhas');
     paragrafoCampanhas.innerHTML = i18next.t('paragrafoCampanhas');
 
-    const tipoButtonSaibaMaisLanding = document.querySelector('.container-tipo-button-landing');
-    tipoButtonSaibaMaisLanding.innerHTML = i18next.t('tipoButtonSaibaMaisLanding');
-    
-    const tipoButtonSaibaMaisCorporativo = document.querySelector('.container-tipo-button-corporativo');
-    tipoButtonSaibaMaisCorporativo.innerHTML = i18next.t('tipoButtonSaibaMaisCorporativo');
-    
-    const tipoButtonSaibaMaisECommerce = document.querySelector('.container-tipo-button-e-commerce');
-    tipoButtonSaibaMaisECommerce.innerHTML = i18next.t('tipoButtonSaibaMaisECommerce');
-    
-    const tipoButtonSaibaMaisCampanha = document.querySelector('.container-tipo-button-campanha');
-    tipoButtonSaibaMaisCampanha.innerHTML = i18next.t('tipoButtonSaibaMaisCampanha');
+    const lp1 = document.querySelector('.lp1');
+    lp1.innerHTML = i18next.t('lp1');
 
-    const tipoButtonFecharLanding = document.querySelector('.botaoFecharLanding');
-    tipoButtonFecharLanding.innerHTML = i18next.t('tipoButtonFecharLanding');
+    const lp2 = document.querySelector('.lp2');
+    lp2.innerHTML = i18next.t('lp2');
 
-    const tipoButtonFecharCorporativo = document.querySelector('.botaoFecharCorporativo');
-    tipoButtonFecharCorporativo.innerHTML = i18next.t('tipoButtonFecharCorporativo');
+    const lp3 = document.querySelector('.lp3');
+    lp3.innerHTML = i18next.t('lp3');
 
-    const tipoButtonFecharECommerce = document.querySelector('.botaoFecharECommerce');
-    tipoButtonFecharECommerce.innerHTML = i18next.t('tipoButtonFecharECommerce');
+    const corporativo1 = document.querySelector('.corporativo1');
+    corporativo1.innerHTML = i18next.t('corporativo1');
 
-    const tipoButtonFecharCampanhas = document.querySelector('.botaoFecharCampanhas');
-    tipoButtonFecharCampanhas.innerHTML = i18next.t('tipoButtonFecharCampanhas');
+    const corporativo2 = document.querySelector('.corporativo2');
+    corporativo2.innerHTML = i18next.t('corporativo2');
+
+    const corporativo3 = document.querySelector('.corporativo3');
+    corporativo3.innerHTML = i18next.t('corporativo3');
+
+    const ecommerce1 = document.querySelector('.e-commerce1');
+    ecommerce1.innerHTML = i18next.t('ecommerce1');
+
+    const ecommerce2 = document.querySelector('.e-commerce2');
+    ecommerce2.innerHTML = i18next.t('ecommerce2');
+
+    const ecommerce3 = document.querySelector('.e-commerce3');
+    ecommerce3.innerHTML = i18next.t('ecommerce3');
+
+    const campanha1 = document.querySelector('.campanha1');
+    campanha1.innerHTML = i18next.t('campanha1');
+
+    const campanha2 = document.querySelector('.campanha2');
+    campanha2.innerHTML = i18next.t('campanha2');
+
+    const campanha3 = document.querySelector('.campanha3');
+    campanha3.innerHTML = i18next.t('campanha3');
+
+    const botaoSites1 = document.querySelector('.botaoSites1');
+    botaoSites1.innerHTML = i18next.t('botaoSites1');
+
+    const botaoSites2 = document.querySelector('.botaoSites2');
+    botaoSites2.innerHTML = i18next.t('botaoSites2');
+
+    const botaoSites3 = document.querySelector('.botaoSites3');
+    botaoSites3.innerHTML = i18next.t('botaoSites3');
+
+    const botaoSites4 = document.querySelector('.botaoSites4');
+    botaoSites4.innerHTML = i18next.t('botaoSites4');
 
     const tituloServicos = document.querySelector('.servicos-titulo');
     tituloServicos.innerHTML = i18next.t('tituloServicos');
