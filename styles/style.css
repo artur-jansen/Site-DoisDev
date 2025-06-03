@@ -1357,8 +1357,8 @@ footer p {
     }
 
     .carrossel-item img {
-        min-height: 150px;
-        max-height: 150px;
+        min-height: 250px;
+        max-height: 250px;
     }
 
     /* ESCOLHAS */
@@ -1371,8 +1371,8 @@ footer p {
     .container-tipo {
         min-width: 100%;
         max-width: 100%;
-        min-height: 450px;
-        max-height: 450px;
+        min-height: 400px;
+        max-height: 400px;
     }
 
     .container-tipo-titulo,
